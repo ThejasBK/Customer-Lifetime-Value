@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "b6ef4fd0",
+   "id": "d713147d",
    "metadata": {
     "papermill": {
-     "duration": 0.005043,
-     "end_time": "2022-11-07T03:09:45.851589",
+     "duration": 0.003909,
+     "end_time": "2022-11-07T03:32:44.011117",
      "exception": false,
-     "start_time": "2022-11-07T03:09:45.846546",
+     "start_time": "2022-11-07T03:32:44.007208",
      "status": "completed"
     },
     "tags": []
@@ -23,19 +23,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "0303afb8",
+   "id": "722b23ae",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:45.863097Z",
-     "iopub.status.busy": "2022-11-07T03:09:45.861121Z",
-     "iopub.status.idle": "2022-11-07T03:09:46.019787Z",
-     "shell.execute_reply": "2022-11-07T03:09:46.018027Z"
+     "iopub.execute_input": "2022-11-07T03:32:44.021823Z",
+     "iopub.status.busy": "2022-11-07T03:32:44.019674Z",
+     "iopub.status.idle": "2022-11-07T03:32:44.190916Z",
+     "shell.execute_reply": "2022-11-07T03:32:44.189329Z"
     },
     "papermill": {
-     "duration": 0.172813,
-     "end_time": "2022-11-07T03:09:46.028328",
+     "duration": 0.185234,
+     "end_time": "2022-11-07T03:32:44.199390",
      "exception": false,
-     "start_time": "2022-11-07T03:09:45.855515",
+     "start_time": "2022-11-07T03:32:44.014156",
      "status": "completed"
     },
     "tags": []
@@ -70,21 +70,21 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "f8f0004e",
+   "id": "5d42a6a3",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:46.070099Z",
-     "iopub.status.busy": "2022-11-07T03:09:46.038192Z",
-     "iopub.status.idle": "2022-11-07T03:09:51.160022Z",
-     "shell.execute_reply": "2022-11-07T03:09:51.157546Z"
+     "iopub.execute_input": "2022-11-07T03:32:44.244900Z",
+     "iopub.status.busy": "2022-11-07T03:32:44.208243Z",
+     "iopub.status.idle": "2022-11-07T03:32:49.795547Z",
+     "shell.execute_reply": "2022-11-07T03:32:49.793481Z"
     },
     "papermill": {
-     "duration": 5.130444,
-     "end_time": "2022-11-07T03:09:51.162695",
+     "duration": 5.596393,
+     "end_time": "2022-11-07T03:32:49.799332",
      "exception": false,
-     "start_time": "2022-11-07T03:09:46.032251",
+     "start_time": "2022-11-07T03:32:44.202939",
      "status": "completed"
     },
     "tags": []
@@ -97,19 +97,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "0a16d0ec",
+   "id": "adf03831",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:51.174278Z",
-     "iopub.status.busy": "2022-11-07T03:09:51.172680Z",
-     "iopub.status.idle": "2022-11-07T03:09:51.192466Z",
-     "shell.execute_reply": "2022-11-07T03:09:51.190750Z"
+     "iopub.execute_input": "2022-11-07T03:32:49.813013Z",
+     "iopub.status.busy": "2022-11-07T03:32:49.811728Z",
+     "iopub.status.idle": "2022-11-07T03:32:49.833868Z",
+     "shell.execute_reply": "2022-11-07T03:32:49.831678Z"
     },
     "papermill": {
-     "duration": 0.027964,
-     "end_time": "2022-11-07T03:09:51.194850",
+     "duration": 0.030518,
+     "end_time": "2022-11-07T03:32:49.836295",
      "exception": false,
-     "start_time": "2022-11-07T03:09:51.166886",
+     "start_time": "2022-11-07T03:32:49.805777",
      "status": "completed"
     },
     "tags": []
@@ -141,19 +141,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "73b1c932",
+   "id": "2d07ce3e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:51.206639Z",
-     "iopub.status.busy": "2022-11-07T03:09:51.205119Z",
-     "iopub.status.idle": "2022-11-07T03:09:51.241521Z",
-     "shell.execute_reply": "2022-11-07T03:09:51.239794Z"
+     "iopub.execute_input": "2022-11-07T03:32:49.846922Z",
+     "iopub.status.busy": "2022-11-07T03:32:49.845269Z",
+     "iopub.status.idle": "2022-11-07T03:32:49.879534Z",
+     "shell.execute_reply": "2022-11-07T03:32:49.877374Z"
     },
     "papermill": {
-     "duration": 0.045005,
-     "end_time": "2022-11-07T03:09:51.243792",
+     "duration": 0.042012,
+     "end_time": "2022-11-07T03:32:49.881922",
      "exception": false,
-     "start_time": "2022-11-07T03:09:51.198787",
+     "start_time": "2022-11-07T03:32:49.839910",
      "status": "completed"
     },
     "tags": []
@@ -223,44 +223,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "2b1932be",
+   "id": "5c5a2a39",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:51.256068Z",
-     "iopub.status.busy": "2022-11-07T03:09:51.254595Z",
-     "iopub.status.idle": "2022-11-07T03:09:52.794975Z",
-     "shell.execute_reply": "2022-11-07T03:09:52.793177Z"
+     "iopub.execute_input": "2022-11-07T03:32:49.892649Z",
+     "iopub.status.busy": "2022-11-07T03:32:49.891311Z",
+     "iopub.status.idle": "2022-11-07T03:32:51.203984Z",
+     "shell.execute_reply": "2022-11-07T03:32:51.202096Z"
     },
     "papermill": {
-     "duration": 1.549828,
-     "end_time": "2022-11-07T03:09:52.798068",
+     "duration": 1.320182,
+     "end_time": "2022-11-07T03:32:51.206134",
      "exception": false,
-     "start_time": "2022-11-07T03:09:51.248240",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "device_info <- lapply(data$device, fromJSON)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 6,
-   "id": "b08a1c02",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:52.810364Z",
-     "iopub.status.busy": "2022-11-07T03:09:52.808885Z",
-     "iopub.status.idle": "2022-11-07T03:09:52.833791Z",
-     "shell.execute_reply": "2022-11-07T03:09:52.832028Z"
-    },
-    "papermill": {
-     "duration": 0.033743,
-     "end_time": "2022-11-07T03:09:52.836147",
-     "exception": false,
-     "start_time": "2022-11-07T03:09:52.802404",
+     "start_time": "2022-11-07T03:32:49.885952",
      "status": "completed"
     },
     "tags": []
@@ -426,25 +401,27 @@
     }
    ],
    "source": [
+    "device_info <- lapply(data$device, fromJSON)\n",
+    "\n",
     "device_info[1]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 7,
-   "id": "45ed4fe7",
+   "execution_count": 6,
+   "id": "f98ead3d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:52.849742Z",
-     "iopub.status.busy": "2022-11-07T03:09:52.848161Z",
-     "iopub.status.idle": "2022-11-07T03:09:54.121765Z",
-     "shell.execute_reply": "2022-11-07T03:09:54.119928Z"
+     "iopub.execute_input": "2022-11-07T03:32:51.216822Z",
+     "iopub.status.busy": "2022-11-07T03:32:51.215549Z",
+     "iopub.status.idle": "2022-11-07T03:32:52.192430Z",
+     "shell.execute_reply": "2022-11-07T03:32:52.190983Z"
     },
     "papermill": {
-     "duration": 1.283056,
-     "end_time": "2022-11-07T03:09:54.124265",
+     "duration": 0.984967,
+     "end_time": "2022-11-07T03:32:52.194897",
      "exception": false,
-     "start_time": "2022-11-07T03:09:52.841209",
+     "start_time": "2022-11-07T03:32:51.209930",
      "status": "completed"
     },
     "tags": []
@@ -468,45 +445,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 8,
-   "id": "bbd5d006",
+   "execution_count": 7,
+   "id": "8b58315e",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:54.137404Z",
-     "iopub.status.busy": "2022-11-07T03:09:54.135803Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.307157Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.305325Z"
+     "iopub.execute_input": "2022-11-07T03:32:52.205935Z",
+     "iopub.status.busy": "2022-11-07T03:32:52.204718Z",
+     "iopub.status.idle": "2022-11-07T03:32:53.176771Z",
+     "shell.execute_reply": "2022-11-07T03:32:53.174695Z"
     },
     "papermill": {
-     "duration": 1.180589,
-     "end_time": "2022-11-07T03:09:55.309572",
+     "duration": 0.980224,
+     "end_time": "2022-11-07T03:32:53.179277",
      "exception": false,
-     "start_time": "2022-11-07T03:09:54.128983",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "geo_network_info <- lapply(data$geoNetwork, fromJSON)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 9,
-   "id": "639e34d4",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.323633Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.321995Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.342830Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.341123Z"
-    },
-    "papermill": {
-     "duration": 0.030383,
-     "end_time": "2022-11-07T03:09:55.345209",
-     "exception": false,
-     "start_time": "2022-11-07T03:09:55.314826",
+     "start_time": "2022-11-07T03:32:52.199053",
      "status": "completed"
     },
     "tags": []
@@ -632,477 +584,255 @@
     }
    ],
    "source": [
+    "geo_network_info <- lapply(data$geoNetwork, fromJSON)\n",
+    "\n",
     "geo_network_info[1]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
-   "id": "7135ab5f",
+   "execution_count": 8,
+   "id": "510593d4",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.359751Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.358028Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.378872Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.376543Z"
+     "iopub.execute_input": "2022-11-07T03:32:53.191039Z",
+     "iopub.status.busy": "2022-11-07T03:32:53.189491Z",
+     "iopub.status.idle": "2022-11-07T03:32:54.772014Z",
+     "shell.execute_reply": "2022-11-07T03:32:54.770604Z"
     },
     "papermill": {
-     "duration": 0.037401,
-     "end_time": "2022-11-07T03:09:55.387983",
+     "duration": 1.590951,
+     "end_time": "2022-11-07T03:32:54.774404",
      "exception": false,
-     "start_time": "2022-11-07T03:09:55.350582",
+     "start_time": "2022-11-07T03:32:53.183453",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "continent <- c()\n",
+    "sub_continent <- c()\n",
+    "country <- c()\n",
+    "network_domain <- c()\n",
+    "\n",
+    "for(i in geo_network_info) {\n",
+    "    continent <- append(continent, i$continent)\n",
+    "    sub_continent <- append(sub_continent, i$subContinent)\n",
+    "    network_domain <- append(network_domain, i$networkDomain)\n",
+    "    country <- append(country, i$country)\n",
+    "}\n",
+    "\n",
+    "data['geo_info_continent'] <- continent\n",
+    "data['geo_info_sub_continent'] <- sub_continent\n",
+    "data['geo_info_network_domain'] <- network_domain\n",
+    "data['geo_info_country'] <- country"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "08e333f7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-07T03:32:54.785559Z",
+     "iopub.status.busy": "2022-11-07T03:32:54.784379Z",
+     "iopub.status.idle": "2022-11-07T03:32:54.793581Z",
+     "shell.execute_reply": "2022-11-07T03:32:54.792248Z"
+    },
+    "papermill": {
+     "duration": 0.017096,
+     "end_time": "2022-11-07T03:32:54.795866",
+     "exception": false,
+     "start_time": "2022-11-07T03:32:54.778770",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# TODO: Need to do the above two steps for hits, totals, and trafficSource"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "ace39733",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-07T03:32:54.806661Z",
+     "iopub.status.busy": "2022-11-07T03:32:54.805487Z",
+     "iopub.status.idle": "2022-11-07T03:32:55.450473Z",
+     "shell.execute_reply": "2022-11-07T03:32:55.449126Z"
+    },
+    "papermill": {
+     "duration": 0.652461,
+     "end_time": "2022-11-07T03:32:55.452394",
+     "exception": false,
+     "start_time": "2022-11-07T03:32:54.799933",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "$continent\n",
-      "[1] \"Europe\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Western Europe\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Germany\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"(not set)\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Americas\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Northern America\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"United States\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"California\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"San Francisco-Oakland-San Jose CA\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"Cupertino\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"(not set)\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Americas\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Northern America\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"United States\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"windjammercable.net\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Asia\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Western Asia\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Turkey\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"unknown.unknown\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Americas\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Central America\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Mexico\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"prod-infinitum.com.mx\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Americas\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Northern America\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"United States\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"California\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"San Francisco-Oakland-San Jose CA\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"San Francisco\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"unknown.unknown\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Europe\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Northern Europe\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"United Kingdom\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"England\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"London\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"London\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"(not set)\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Europe\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Northern Europe\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Denmark\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"fullrate.ninja\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Americas\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Central America\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Mexico\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"Mexico City\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"(not set)\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"Mexico City\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"uninet-ide.com.mx\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$continent\n",
-      "[1] \"Europe\"\n",
-      "\n",
-      "$subContinent\n",
-      "[1] \"Western Europe\"\n",
-      "\n",
-      "$country\n",
-      "[1] \"Netherlands\"\n",
-      "\n",
-      "$region\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$metro\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$city\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$cityId\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkDomain\n",
-      "[1] \"(not set)\"\n",
-      "\n",
-      "$latitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$longitude\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n",
-      "$networkLocation\n",
-      "[1] \"not available in demo dataset\"\n",
-      "\n"
-     ]
+     "data": {
+      "text/html": [
+       "<ol>\n",
+       "\t<li><dl>\n",
+       "\t<dt>$visits</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "\t<dt>$hits</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "\t<dt>$pageviews</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "\t<dt>$bounces</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "\t<dt>$newVisits</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "\t<dt>$sessionQualityDim</dt>\n",
+       "\t\t<dd>'1'</dd>\n",
+       "</dl>\n",
+       "</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate}\n",
+       "\\item \\begin{description}\n",
+       "\\item[\\$visits] '1'\n",
+       "\\item[\\$hits] '1'\n",
+       "\\item[\\$pageviews] '1'\n",
+       "\\item[\\$bounces] '1'\n",
+       "\\item[\\$newVisits] '1'\n",
+       "\\item[\\$sessionQualityDim] '1'\n",
+       "\\end{description}\n",
+       "\n",
+       "\\end{enumerate}\n"
+      ],
+      "text/markdown": [
+       "1. $visits\n",
+       ":   '1'\n",
+       "$hits\n",
+       ":   '1'\n",
+       "$pageviews\n",
+       ":   '1'\n",
+       "$bounces\n",
+       ":   '1'\n",
+       "$newVisits\n",
+       ":   '1'\n",
+       "$sessionQualityDim\n",
+       ":   '1'\n",
+       "\n",
+       "\n",
+       "\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[[1]]\n",
+       "[[1]]$visits\n",
+       "[1] \"1\"\n",
+       "\n",
+       "[[1]]$hits\n",
+       "[1] \"1\"\n",
+       "\n",
+       "[[1]]$pageviews\n",
+       "[1] \"1\"\n",
+       "\n",
+       "[[1]]$bounces\n",
+       "[1] \"1\"\n",
+       "\n",
+       "[[1]]$newVisits\n",
+       "[1] \"1\"\n",
+       "\n",
+       "[[1]]$sessionQualityDim\n",
+       "[1] \"1\"\n",
+       "\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
     }
    ],
    "source": [
-    "for(i in geo_network_info[1:10]) {\n",
-    "    print(i)\n",
-    "}"
+    "totals_info <- lapply(data$totals, fromJSON)\n",
+    "\n",
+    "totals_info[1]"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "bb58ccf5",
+   "id": "a7b10b7a",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.402806Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.401348Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.413848Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.412235Z"
+     "iopub.execute_input": "2022-11-07T03:32:55.471526Z",
+     "iopub.status.busy": "2022-11-07T03:32:55.470269Z",
+     "iopub.status.idle": "2022-11-07T03:32:55.479904Z",
+     "shell.execute_reply": "2022-11-07T03:32:55.478632Z"
     },
     "papermill": {
-     "duration": 0.022903,
-     "end_time": "2022-11-07T03:09:55.416842",
+     "duration": 0.024139,
+     "end_time": "2022-11-07T03:32:55.481966",
      "exception": false,
-     "start_time": "2022-11-07T03:09:55.393939",
+     "start_time": "2022-11-07T03:32:55.457827",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [],
    "source": [
-    "# hits_info <- lapply(data$hits, fromJSON)"
+    "# visits <- c()\n",
+    "# hits <- c()\n",
+    "# page_views <- c()\n",
+    "# bounces <- c()\n",
+    "# total_transaction_revenue <- c()\n",
+    "# new_visits <- c()\n",
+    "# session_quality_dim <- c()\n",
+    "# transaction_revenue <- c()\n",
+    "\n",
+    "\n",
+    "# for(i in totals_info) {\n",
+    "#     if(length(i) == 6)\n",
+    "#     visits <- append(visits, i$visits)\n",
+    "#     hits <- append(hits, i$hits)\n",
+    "#     page_views <- append(page_views, i$pageViews)\n",
+    "#     bounces <- append(bounces, i$bounces)\n",
+    "#     if(length(i$totalTransactionRevenue))\n",
+    "#         total_transaction_revenue <- append(total_transaction_revenue, i$totalTransactionRevenue)\n",
+    "#     else\n",
+    "#         total_transaction_revenue <- append(total_transaction_revenue, 0)\n",
+    "#     new_visits <- append(new_visits, i$newVisits)\n",
+    "#     session_quality_dim <- append(session_quality_dim, i$sessionQualityDim)\n",
+    "#     transaction_revenue <- append(transaction_revenue, i$transactionRevenue)\n",
+    "# }\n",
+    "\n",
+    "# data['total_visits'] <- visits\n",
+    "# data['total_hits'] <- hits\n",
+    "# data['total_page_views'] <- page_views\n",
+    "# data['total_total_transaction_revenue'] <- total_transaction_revenue\n",
+    "# data['total_bounces'] <- bounces\n",
+    "# data['total_new_visits'] <- new_visits\n",
+    "# data['total_session_quality_dim'] <- session_quality_dim\n",
+    "# data['total_transaction_revenue'] <- transaction_revenue"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
-   "id": "0952c5af",
+   "execution_count": null,
+   "id": "c2706e7c",
    "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.431103Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.429595Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.442218Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.440640Z"
-    },
     "papermill": {
-     "duration": 0.023025,
-     "end_time": "2022-11-07T03:09:55.445203",
+     "duration": 0.004378,
+     "end_time": "2022-11-07T03:32:55.490763",
      "exception": false,
-     "start_time": "2022-11-07T03:09:55.422178",
+     "start_time": "2022-11-07T03:32:55.486385",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [],
-   "source": [
-    "# totals_info <- lapply(data$totals, fromJSON)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 13,
-   "id": "ff8bc734",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.459646Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.458157Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.470108Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.468501Z"
-    },
-    "papermill": {
-     "duration": 0.022282,
-     "end_time": "2022-11-07T03:09:55.472960",
-     "exception": false,
-     "start_time": "2022-11-07T03:09:55.450678",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "# count <- 0\n",
-    "# for(i in totals_info) #totalTransactionRevenue\n",
-    "#     if(length(i$totalTransactionRevenue)) {\n",
-    "# #         print(i$totalTransactionRevenue)\n",
-    "#         count <- count + 1\n",
-    "#     }"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 14,
-   "id": "ea082f7e",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:09:55.488311Z",
-     "iopub.status.busy": "2022-11-07T03:09:55.486699Z",
-     "iopub.status.idle": "2022-11-07T03:09:55.499221Z",
-     "shell.execute_reply": "2022-11-07T03:09:55.497324Z"
-    },
-    "papermill": {
-     "duration": 0.022811,
-     "end_time": "2022-11-07T03:09:55.501649",
-     "exception": false,
-     "start_time": "2022-11-07T03:09:55.478838",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "# data"
-   ]
+   "source": []
   }
  ],
  "metadata": {
@@ -1121,14 +851,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 13.778954,
-   "end_time": "2022-11-07T03:09:55.631371",
+   "duration": 15.77555,
+   "end_time": "2022-11-07T03:32:55.624404",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2022-11-07T03:09:41.852417",
+   "start_time": "2022-11-07T03:32:39.848854",
    "version": "2.4.0"
   }
  },
