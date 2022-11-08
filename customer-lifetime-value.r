@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "d713147d",
+   "id": "65f47675",
    "metadata": {
     "papermill": {
-     "duration": 0.003909,
-     "end_time": "2022-11-07T03:32:44.011117",
+     "duration": 0.005929,
+     "end_time": "2022-11-08T20:14:53.555976",
      "exception": false,
-     "start_time": "2022-11-07T03:32:44.007208",
+     "start_time": "2022-11-08T20:14:53.550047",
      "status": "completed"
     },
     "tags": []
@@ -23,19 +23,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "722b23ae",
+   "id": "de71a9b5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:44.021823Z",
-     "iopub.status.busy": "2022-11-07T03:32:44.019674Z",
-     "iopub.status.idle": "2022-11-07T03:32:44.190916Z",
-     "shell.execute_reply": "2022-11-07T03:32:44.189329Z"
+     "iopub.execute_input": "2022-11-08T20:14:53.570482Z",
+     "iopub.status.busy": "2022-11-08T20:14:53.567842Z",
+     "iopub.status.idle": "2022-11-08T20:14:53.767893Z",
+     "shell.execute_reply": "2022-11-08T20:14:53.766085Z"
     },
     "papermill": {
-     "duration": 0.185234,
-     "end_time": "2022-11-07T03:32:44.199390",
+     "duration": 0.210688,
+     "end_time": "2022-11-08T20:14:53.771216",
      "exception": false,
-     "start_time": "2022-11-07T03:32:44.014156",
+     "start_time": "2022-11-08T20:14:53.560528",
      "status": "completed"
     },
     "tags": []
@@ -64,27 +64,28 @@
    ],
    "source": [
     "library(dplyr)\n",
-    "library(jsonlite)"
+    "library(jsonlite)\n",
+    "library(stringr)"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "5d42a6a3",
+   "id": "9ee44a66",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:44.244900Z",
-     "iopub.status.busy": "2022-11-07T03:32:44.208243Z",
-     "iopub.status.idle": "2022-11-07T03:32:49.795547Z",
-     "shell.execute_reply": "2022-11-07T03:32:49.793481Z"
+     "iopub.execute_input": "2022-11-08T20:14:53.813868Z",
+     "iopub.status.busy": "2022-11-08T20:14:53.782812Z",
+     "iopub.status.idle": "2022-11-08T20:14:59.056770Z",
+     "shell.execute_reply": "2022-11-08T20:14:59.054849Z"
     },
     "papermill": {
-     "duration": 5.596393,
-     "end_time": "2022-11-07T03:32:49.799332",
+     "duration": 5.283034,
+     "end_time": "2022-11-08T20:14:59.059315",
      "exception": false,
-     "start_time": "2022-11-07T03:32:44.202939",
+     "start_time": "2022-11-08T20:14:53.776281",
      "status": "completed"
     },
     "tags": []
@@ -97,19 +98,19 @@
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "adf03831",
+   "id": "e47ad130",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:49.813013Z",
-     "iopub.status.busy": "2022-11-07T03:32:49.811728Z",
-     "iopub.status.idle": "2022-11-07T03:32:49.833868Z",
-     "shell.execute_reply": "2022-11-07T03:32:49.831678Z"
+     "iopub.execute_input": "2022-11-08T20:14:59.077355Z",
+     "iopub.status.busy": "2022-11-08T20:14:59.074712Z",
+     "iopub.status.idle": "2022-11-08T20:14:59.097157Z",
+     "shell.execute_reply": "2022-11-08T20:14:59.095075Z"
     },
     "papermill": {
-     "duration": 0.030518,
-     "end_time": "2022-11-07T03:32:49.836295",
+     "duration": 0.033858,
+     "end_time": "2022-11-08T20:14:59.099986",
      "exception": false,
-     "start_time": "2022-11-07T03:32:49.805777",
+     "start_time": "2022-11-08T20:14:59.066128",
      "status": "completed"
     },
     "tags": []
@@ -141,19 +142,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "2d07ce3e",
+   "id": "b520f443",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:49.846922Z",
-     "iopub.status.busy": "2022-11-07T03:32:49.845269Z",
-     "iopub.status.idle": "2022-11-07T03:32:49.879534Z",
-     "shell.execute_reply": "2022-11-07T03:32:49.877374Z"
+     "iopub.execute_input": "2022-11-08T20:14:59.112774Z",
+     "iopub.status.busy": "2022-11-08T20:14:59.111305Z",
+     "iopub.status.idle": "2022-11-08T20:14:59.149479Z",
+     "shell.execute_reply": "2022-11-08T20:14:59.146794Z"
     },
     "papermill": {
-     "duration": 0.042012,
-     "end_time": "2022-11-07T03:32:49.881922",
+     "duration": 0.047645,
+     "end_time": "2022-11-08T20:14:59.152346",
      "exception": false,
-     "start_time": "2022-11-07T03:32:49.839910",
+     "start_time": "2022-11-08T20:14:59.104701",
      "status": "completed"
     },
     "tags": []
@@ -223,19 +224,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "5c5a2a39",
+   "id": "2a31df75",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:49.892649Z",
-     "iopub.status.busy": "2022-11-07T03:32:49.891311Z",
-     "iopub.status.idle": "2022-11-07T03:32:51.203984Z",
-     "shell.execute_reply": "2022-11-07T03:32:51.202096Z"
+     "iopub.execute_input": "2022-11-08T20:14:59.166671Z",
+     "iopub.status.busy": "2022-11-08T20:14:59.165102Z",
+     "iopub.status.idle": "2022-11-08T20:15:00.667303Z",
+     "shell.execute_reply": "2022-11-08T20:15:00.664971Z"
     },
     "papermill": {
-     "duration": 1.320182,
-     "end_time": "2022-11-07T03:32:51.206134",
+     "duration": 1.512827,
+     "end_time": "2022-11-08T20:15:00.670815",
      "exception": false,
-     "start_time": "2022-11-07T03:32:49.885952",
+     "start_time": "2022-11-08T20:14:59.157988",
      "status": "completed"
     },
     "tags": []
@@ -402,26 +403,25 @@
    ],
    "source": [
     "device_info <- lapply(data$device, fromJSON)\n",
-    "\n",
     "device_info[1]"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "f98ead3d",
+   "id": "cfed126d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:51.216822Z",
-     "iopub.status.busy": "2022-11-07T03:32:51.215549Z",
-     "iopub.status.idle": "2022-11-07T03:32:52.192430Z",
-     "shell.execute_reply": "2022-11-07T03:32:52.190983Z"
+     "iopub.execute_input": "2022-11-08T20:15:00.689942Z",
+     "iopub.status.busy": "2022-11-08T20:15:00.688164Z",
+     "iopub.status.idle": "2022-11-08T20:15:02.089410Z",
+     "shell.execute_reply": "2022-11-08T20:15:02.087659Z"
     },
     "papermill": {
-     "duration": 0.984967,
-     "end_time": "2022-11-07T03:32:52.194897",
+     "duration": 1.412428,
+     "end_time": "2022-11-08T20:15:02.092023",
      "exception": false,
-     "start_time": "2022-11-07T03:32:51.209930",
+     "start_time": "2022-11-08T20:15:00.679595",
      "status": "completed"
     },
     "tags": []
@@ -446,19 +446,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "8b58315e",
+   "id": "6268bf50",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:52.205935Z",
-     "iopub.status.busy": "2022-11-07T03:32:52.204718Z",
-     "iopub.status.idle": "2022-11-07T03:32:53.176771Z",
-     "shell.execute_reply": "2022-11-07T03:32:53.174695Z"
+     "iopub.execute_input": "2022-11-08T20:15:02.106584Z",
+     "iopub.status.busy": "2022-11-08T20:15:02.105126Z",
+     "iopub.status.idle": "2022-11-08T20:15:03.206480Z",
+     "shell.execute_reply": "2022-11-08T20:15:03.204798Z"
     },
     "papermill": {
-     "duration": 0.980224,
-     "end_time": "2022-11-07T03:32:53.179277",
+     "duration": 1.111121,
+     "end_time": "2022-11-08T20:15:03.208779",
      "exception": false,
-     "start_time": "2022-11-07T03:32:52.199053",
+     "start_time": "2022-11-08T20:15:02.097658",
      "status": "completed"
     },
     "tags": []
@@ -585,26 +585,25 @@
    ],
    "source": [
     "geo_network_info <- lapply(data$geoNetwork, fromJSON)\n",
-    "\n",
     "geo_network_info[1]"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "510593d4",
+   "id": "9f01e028",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:53.191039Z",
-     "iopub.status.busy": "2022-11-07T03:32:53.189491Z",
-     "iopub.status.idle": "2022-11-07T03:32:54.772014Z",
-     "shell.execute_reply": "2022-11-07T03:32:54.770604Z"
+     "iopub.execute_input": "2022-11-08T20:15:03.224651Z",
+     "iopub.status.busy": "2022-11-08T20:15:03.223196Z",
+     "iopub.status.idle": "2022-11-08T20:15:05.031510Z",
+     "shell.execute_reply": "2022-11-08T20:15:05.029745Z"
     },
     "papermill": {
-     "duration": 1.590951,
-     "end_time": "2022-11-07T03:32:54.774404",
+     "duration": 1.819082,
+     "end_time": "2022-11-08T20:15:05.034218",
      "exception": false,
-     "start_time": "2022-11-07T03:32:53.183453",
+     "start_time": "2022-11-08T20:15:03.215136",
      "status": "completed"
     },
     "tags": []
@@ -632,44 +631,19 @@
   {
    "cell_type": "code",
    "execution_count": 9,
-   "id": "08e333f7",
+   "id": "b562eca9",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:54.785559Z",
-     "iopub.status.busy": "2022-11-07T03:32:54.784379Z",
-     "iopub.status.idle": "2022-11-07T03:32:54.793581Z",
-     "shell.execute_reply": "2022-11-07T03:32:54.792248Z"
+     "iopub.execute_input": "2022-11-08T20:15:05.049805Z",
+     "iopub.status.busy": "2022-11-08T20:15:05.048264Z",
+     "iopub.status.idle": "2022-11-08T20:15:05.809096Z",
+     "shell.execute_reply": "2022-11-08T20:15:05.807471Z"
     },
     "papermill": {
-     "duration": 0.017096,
-     "end_time": "2022-11-07T03:32:54.795866",
+     "duration": 0.771209,
+     "end_time": "2022-11-08T20:15:05.811419",
      "exception": false,
-     "start_time": "2022-11-07T03:32:54.778770",
-     "status": "completed"
-    },
-    "tags": []
-   },
-   "outputs": [],
-   "source": [
-    "# TODO: Need to do the above two steps for hits, totals, and trafficSource"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 10,
-   "id": "ace39733",
-   "metadata": {
-    "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:54.806661Z",
-     "iopub.status.busy": "2022-11-07T03:32:54.805487Z",
-     "iopub.status.idle": "2022-11-07T03:32:55.450473Z",
-     "shell.execute_reply": "2022-11-07T03:32:55.449126Z"
-    },
-    "papermill": {
-     "duration": 0.652461,
-     "end_time": "2022-11-07T03:32:55.452394",
-     "exception": false,
-     "start_time": "2022-11-07T03:32:54.799933",
+     "start_time": "2022-11-08T20:15:05.040210",
      "status": "completed"
     },
     "tags": []
@@ -756,77 +730,518 @@
    ],
    "source": [
     "totals_info <- lapply(data$totals, fromJSON)\n",
-    "\n",
     "totals_info[1]"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
-   "id": "a7b10b7a",
+   "execution_count": 10,
+   "id": "3a38c521",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-07T03:32:55.471526Z",
-     "iopub.status.busy": "2022-11-07T03:32:55.470269Z",
-     "iopub.status.idle": "2022-11-07T03:32:55.479904Z",
-     "shell.execute_reply": "2022-11-07T03:32:55.478632Z"
+     "iopub.execute_input": "2022-11-08T20:15:05.826882Z",
+     "iopub.status.busy": "2022-11-08T20:15:05.825432Z",
+     "iopub.status.idle": "2022-11-08T20:15:08.731081Z",
+     "shell.execute_reply": "2022-11-08T20:15:08.729401Z"
     },
     "papermill": {
-     "duration": 0.024139,
-     "end_time": "2022-11-07T03:32:55.481966",
+     "duration": 2.916098,
+     "end_time": "2022-11-08T20:15:08.733568",
      "exception": false,
-     "start_time": "2022-11-07T03:32:55.457827",
+     "start_time": "2022-11-08T20:15:05.817470",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [],
    "source": [
-    "# visits <- c()\n",
-    "# hits <- c()\n",
-    "# page_views <- c()\n",
-    "# bounces <- c()\n",
-    "# total_transaction_revenue <- c()\n",
-    "# new_visits <- c()\n",
-    "# session_quality_dim <- c()\n",
-    "# transaction_revenue <- c()\n",
+    "visits <- c()\n",
+    "hits <- c()\n",
+    "page_views <- c()\n",
+    "bounces <- c()\n",
+    "total_transaction_revenue <- c()\n",
+    "new_visits <- c()\n",
+    "session_quality_dim <- c()\n",
+    "transaction_revenue <- c()\n",
+    "\n",
+    "count <- 0\n",
+    "for(i in totals_info) {\n",
+    "    if(length(i$visits))\n",
+    "        visits <- append(visits, i$visits)\n",
+    "    else\n",
+    "        visits <- append(visits, 0) \n",
+    "    if(length(i$hits))\n",
+    "        hits <- append(hits, i$hits)\n",
+    "    else\n",
+    "        hits <- append(hits, 0)\n",
+    "    if(length(i$page_views))\n",
+    "        page_views <- append(page_views, i$pageViews)\n",
+    "    else\n",
+    "        page_views <- append(page_views, 0)\n",
+    "    if(length(i$bounces))\n",
+    "        bounces <- append(bounces, i$bounces)\n",
+    "    else\n",
+    "        bounces <- append(bounces, 0)\n",
+    "    if(length(i$totalTransactionRevenue))\n",
+    "        total_transaction_revenue <- append(total_transaction_revenue, i$totalTransactionRevenue)\n",
+    "    else\n",
+    "        total_transaction_revenue <- append(total_transaction_revenue, 0)\n",
+    "    if(length(i$sessionQualityDim))\n",
+    "        session_quality_dim <- append(session_quality_dim, i$sessionQualityDim)\n",
+    "    else\n",
+    "        session_quality_dim <- append(session_quality_dim, 0)\n",
+    "    if(length(i$newVisits))\n",
+    "        new_visits <- append(new_visits, i$newVisits)\n",
+    "    else\n",
+    "        new_visits <- append(new_visits, 0)\n",
+    "    if(length(i$transactionRevenue))\n",
+    "        transaction_revenue <- append(transaction_revenue, i$transactionRevenue)\n",
+    "    else\n",
+    "        transaction_revenue <- append(transaction_revenue, 0)    \n",
+    "}\n",
+    "\n",
+    "data['total_visits'] <- visits\n",
+    "data['total_hits'] <- hits\n",
+    "data['total_page_views'] <- page_views\n",
+    "data['total_total_transaction_revenue'] <- total_transaction_revenue\n",
+    "data['total_bounces'] <- bounces\n",
+    "data['total_new_visits'] <- new_visits\n",
+    "data['total_session_quality_dim'] <- session_quality_dim\n",
+    "data['total_transaction_revenue'] <- transaction_revenue"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "b348d8bd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:08.749492Z",
+     "iopub.status.busy": "2022-11-08T20:15:08.748040Z",
+     "iopub.status.idle": "2022-11-08T20:15:09.734643Z",
+     "shell.execute_reply": "2022-11-08T20:15:09.733029Z"
+    },
+    "papermill": {
+     "duration": 0.997044,
+     "end_time": "2022-11-08T20:15:09.736953",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:08.739909",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol>\n",
+       "\t<li><dl>\n",
+       "\t<dt>$campaign</dt>\n",
+       "\t\t<dd>'(not set)'</dd>\n",
+       "\t<dt>$source</dt>\n",
+       "\t\t<dd>'google'</dd>\n",
+       "\t<dt>$medium</dt>\n",
+       "\t\t<dd>'organic'</dd>\n",
+       "\t<dt>$keyword</dt>\n",
+       "\t\t<dd>'water bottle'</dd>\n",
+       "\t<dt>$adwordsClickInfo</dt>\n",
+       "\t\t<dd><strong>$criteriaParameters</strong> = 'not available in demo dataset'</dd>\n",
+       "</dl>\n",
+       "</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate}\n",
+       "\\item \\begin{description}\n",
+       "\\item[\\$campaign] '(not set)'\n",
+       "\\item[\\$source] 'google'\n",
+       "\\item[\\$medium] 'organic'\n",
+       "\\item[\\$keyword] 'water bottle'\n",
+       "\\item[\\$adwordsClickInfo] \\textbf{\\$criteriaParameters} = 'not available in demo dataset'\n",
+       "\\end{description}\n",
+       "\n",
+       "\\end{enumerate}\n"
+      ],
+      "text/markdown": [
+       "1. $campaign\n",
+       ":   '(not set)'\n",
+       "$source\n",
+       ":   'google'\n",
+       "$medium\n",
+       ":   'organic'\n",
+       "$keyword\n",
+       ":   'water bottle'\n",
+       "$adwordsClickInfo\n",
+       ":   **$criteriaParameters** = 'not available in demo dataset'\n",
+       "\n",
+       "\n",
+       "\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[[1]]\n",
+       "[[1]]$campaign\n",
+       "[1] \"(not set)\"\n",
+       "\n",
+       "[[1]]$source\n",
+       "[1] \"google\"\n",
+       "\n",
+       "[[1]]$medium\n",
+       "[1] \"organic\"\n",
+       "\n",
+       "[[1]]$keyword\n",
+       "[1] \"water bottle\"\n",
+       "\n",
+       "[[1]]$adwordsClickInfo\n",
+       "[[1]]$adwordsClickInfo$criteriaParameters\n",
+       "[1] \"not available in demo dataset\"\n",
+       "\n",
+       "\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "traffic_info <- lapply(data$trafficSource, fromJSON)\n",
+    "traffic_info[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "921e2090",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:09.753328Z",
+     "iopub.status.busy": "2022-11-08T20:15:09.751870Z",
+     "iopub.status.idle": "2022-11-08T20:15:11.304205Z",
+     "shell.execute_reply": "2022-11-08T20:15:11.302370Z"
+    },
+    "papermill": {
+     "duration": 1.563068,
+     "end_time": "2022-11-08T20:15:11.306729",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:09.743661",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "campaign <- c()\n",
+    "source <- c()\n",
+    "medium <- c()\n",
+    "keyword <- c()\n",
+    "\n",
+    "for(i in traffic_info) {\n",
+    "    campaign <- append(campaign, i$campaign)\n",
+    "    source <- append(source, i$source)\n",
+    "    medium <- append(medium, i$medium)\n",
+    "    if(length(i$keyword))\n",
+    "        keyword <- append(keyword, i$keyword)\n",
+    "    else\n",
+    "        keyword <- append(keyword, '(not provided)')\n",
+    "}\n",
+    "\n",
+    "data['traffic_campaign'] <- campaign\n",
+    "data['traffic_source'] <- source\n",
+    "data['traffic_medium'] <- medium\n",
+    "data['traffic_keyword'] <- keyword"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "4b62ec73",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:11.323090Z",
+     "iopub.status.busy": "2022-11-08T20:15:11.321516Z",
+     "iopub.status.idle": "2022-11-08T20:15:11.333422Z",
+     "shell.execute_reply": "2022-11-08T20:15:11.331776Z"
+    },
+    "papermill": {
+     "duration": 0.022244,
+     "end_time": "2022-11-08T20:15:11.335747",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:11.313503",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# # gsub is used to replace characters and str_sub is used for splitting\n",
+    "# hits_info <- lapply(str_sub(gsub('True', '\"True\"', gsub(\"'\", '\"', data$hits)), 2, -2), fromJSON) #gsub(\"\", \"\", data$hits)\n",
+    "# hits_info[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "a0f09807",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:11.362234Z",
+     "iopub.status.busy": "2022-11-08T20:15:11.360627Z",
+     "iopub.status.idle": "2022-11-08T20:15:11.375754Z",
+     "shell.execute_reply": "2022-11-08T20:15:11.373879Z"
+    },
+    "papermill": {
+     "duration": 0.036291,
+     "end_time": "2022-11-08T20:15:11.378331",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:11.342040",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# hit_number <- c()\n",
+    "# time <- c()\n",
+    "# hour <- c()\n",
+    "# minute <- c()\n",
+    "# interaction <- c()\n",
+    "# entrance <- c()\n",
+    "# exit <- c()\n",
+    "# referer <- c()\n",
+    "# page_path <- c()\n",
+    "# host_name <- c()\n",
+    "# page_title <- c()\n",
+    "# transaction_currency_code <- c()\n",
+    "# item_currency_code <- c()\n",
+    "# screen_depth <- c()\n",
+    "# promotion <- c()\n",
+    "# ecommerce_action <- c()\n",
+    "# has_social_network_referral <- c()\n",
+    "# data_source <- c()\n",
+    "# publisher_info <- c()\n",
+    "# product_sku <- c()\n",
+    "# product_name <- c()\n",
+    "# product_price <- c()\n",
+    "# local_product_price <- c()\n",
+    "# product_list_position <- c()\n",
     "\n",
     "\n",
-    "# for(i in totals_info) {\n",
-    "#     if(length(i) == 6)\n",
-    "#     visits <- append(visits, i$visits)\n",
-    "#     hits <- append(hits, i$hits)\n",
-    "#     page_views <- append(page_views, i$pageViews)\n",
-    "#     bounces <- append(bounces, i$bounces)\n",
-    "#     if(length(i$totalTransactionRevenue))\n",
-    "#         total_transaction_revenue <- append(total_transaction_revenue, i$totalTransactionRevenue)\n",
-    "#     else\n",
-    "#         total_transaction_revenue <- append(total_transaction_revenue, 0)\n",
-    "#     new_visits <- append(new_visits, i$newVisits)\n",
-    "#     session_quality_dim <- append(session_quality_dim, i$sessionQualityDim)\n",
-    "#     transaction_revenue <- append(transaction_revenue, i$transactionRevenue)\n",
+    "# for(i in hits_info) {\n",
+    "#     hit_number <- append(hit_number, i$hitNumber)\n",
+    "#     time <- append(time, i$time)\n",
+    "#     hour <- append(hour, i$hour)\n",
+    "#     minute <- append(minute, i$minute)\n",
+    "#     interaction <- append(interaction, i$isInteraction)\n",
+    "#     entrance <- append(entrance, i$isEntrance)\n",
+    "#     exit <- append(exit, i$isExit)\n",
+    "#     referer <- append(referer, i$referer)\n",
+    "    \n",
+    "#     page_path <- append(page_path, i$page$pagePath)\n",
+    "#     host_name <- append(host_name, i$page$hostName)\n",
+    "#     page_title <- append(page_title, i$page$pageTitle)\n",
+    "#     transaction_currency_code <- append(transaction_currency_code, i$transaction$currencyCode)\n",
+    "#     item_currency_code <- append(item_currency_code, i$item$currencyCode)\n",
+    "#     screen_depth <- append(screen_depth, i$appInfo$screenDepth)\n",
+    "#     promotion <- append(promotion, i$promotion)\n",
+    "#     ecommerce_action <- append(ecommerce_action, i$eCommerceAction$action_type)\n",
+    "#     has_social_network_referral <- append(has_social_network_referral, i$social$hasSocialSourceReferral)\n",
+    "#     data_source <- append(data_source, i$dataSource)\n",
+    "    \n",
+    "#     publisher_info <- append(publisher_info, i$publisher_infos)\n",
+    "#     product_sku <- append(product_sku, c(i$product$productSKU))\n",
+    "#     product_name <- append(product_name, i$product$v2ProductName)\n",
+    "#     product_price <- append(product_price, i$product$productPrice)\n",
+    "#     local_product_price <- append(local_product_price, i$product$localProductPrice)\n",
+    "#     product_list_position <- append(product_list_position, i$product$productListPosition)\n",
+    "    \n",
+    "    \n",
+    "# #     if(length(i$keyword))\n",
+    "# #         keyword <- append(keyword, i$keyword)\n",
+    "# #     else\n",
+    "# #         keyword <- append(keyword, '(not provided)')\n",
     "# }\n",
     "\n",
-    "# data['total_visits'] <- visits\n",
-    "# data['total_hits'] <- hits\n",
-    "# data['total_page_views'] <- page_views\n",
-    "# data['total_total_transaction_revenue'] <- total_transaction_revenue\n",
-    "# data['total_bounces'] <- bounces\n",
-    "# data['total_new_visits'] <- new_visits\n",
-    "# data['total_session_quality_dim'] <- session_quality_dim\n",
-    "# data['total_transaction_revenue'] <- transaction_revenue"
+    "# data['hits_hit_number'] <- hit_number\n",
+    "# data['hits_time'] <- time\n",
+    "# data['hits_hour'] <- hour\n",
+    "# data['hits_minute'] <- minute\n",
+    "# data['hits_interaction'] <- interaction\n",
+    "# data['hits_entrance'] <- entrance\n",
+    "# data['hits_exit'] <- exit\n",
+    "# data['hits_referer'] <- referer\n",
+    "# data['hits_page_path'] <- page_path\n",
+    "# data['hits_host_name'] <- host_name\n",
+    "# data['hits_page_title'] <- page_title\n",
+    "# data['hits_transaction_currency_code'] <- transaction_currency_code\n",
+    "# data['hits_item_currency_code'] <- item_currency_code\n",
+    "# data['hits_screen_depth'] <- screen_depth\n",
+    "# data['hits_promotion'] <- promotion\n",
+    "# data['hits_ecommerce_action'] <- ecommerce_action\n",
+    "# data['hits_has_social_network_referral'] <- has_social_network_referral\n",
+    "# data['hits_data_source'] <- data_source\n",
+    "# data['hits_publisher_info'] <- publisher_info\n",
+    "# data['hits_product_sku'] <- product_sku\n",
+    "# data['hits_product_name'] <- product_name\n",
+    "# data['hits_product_price'] <- product_price\n",
+    "# data['hits_local_product_price'] <- local_product_price\n",
+    "# data['hits_product_list_position'] <- product_list_position"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "c811b10e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:11.395178Z",
+     "iopub.status.busy": "2022-11-08T20:15:11.393491Z",
+     "iopub.status.idle": "2022-11-08T20:15:12.619612Z",
+     "shell.execute_reply": "2022-11-08T20:15:12.617826Z"
+    },
+    "papermill": {
+     "duration": 1.237291,
+     "end_time": "2022-11-08T20:15:12.622076",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:11.384785",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<ol>\n",
+       "\t<li><table class=\"dataframe\">\n",
+       "<caption>A data.frame: 1 × 2</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>index</th><th scope=col>value</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1</th><td>4</td><td>EMEA</td></tr>\n",
+       "</tbody>\n",
+       "</table>\n",
+       "</li>\n",
+       "</ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate}\n",
+       "\\item A data.frame: 1 × 2\n",
+       "\\begin{tabular}{r|ll}\n",
+       "  & index & value\\\\\n",
+       "  & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1 & 4 & EMEA\\\\\n",
+       "\\end{tabular}\n",
+       "\n",
+       "\\end{enumerate}\n"
+      ],
+      "text/markdown": [
+       "1. \n",
+       "A data.frame: 1 × 2\n",
+       "\n",
+       "| <!--/--> | index &lt;chr&gt; | value &lt;chr&gt; |\n",
+       "|---|---|---|\n",
+       "| 1 | 4 | EMEA |\n",
+       "\n",
+       "\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[[1]]\n",
+       "  index value\n",
+       "1     4  EMEA\n"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "# # gsub is used to replace characters and str_sub is used for splitting\n",
+    "custom_info <- lapply(str_sub(gsub(\"'\", '\"', data$customDimensions, 2, -2)), fromJSON) #gsub(\"\", \"\", data$hits)\n",
+    "custom_info[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "4016fc45",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:12.645676Z",
+     "iopub.status.busy": "2022-11-08T20:15:12.637103Z",
+     "iopub.status.idle": "2022-11-08T20:15:13.484059Z",
+     "shell.execute_reply": "2022-11-08T20:15:13.482169Z"
+    },
+    "papermill": {
+     "duration": 0.857972,
+     "end_time": "2022-11-08T20:15:13.486494",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:12.628522",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "index <- c()\n",
+    "value <- c()\n",
+    "\n",
+    "for(i in custom_info) {\n",
+    "    if(length(i$index))\n",
+    "        index <- append(index, i$index)\n",
+    "    else\n",
+    "        index <- append(index, 0)\n",
+    "    if(length(i$value))\n",
+    "        value <- append(value, i$value)    \n",
+    "    else\n",
+    "        value <- append(value, 0)\n",
+    "}\n",
+    "\n",
+    "data['custom_index'] <- index\n",
+    "data['custom_value'] <- value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "83d0be43",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-08T20:15:13.503445Z",
+     "iopub.status.busy": "2022-11-08T20:15:13.501886Z",
+     "iopub.status.idle": "2022-11-08T20:15:13.572234Z",
+     "shell.execute_reply": "2022-11-08T20:15:13.570489Z"
+    },
+    "papermill": {
+     "duration": 0.081343,
+     "end_time": "2022-11-08T20:15:13.574550",
+     "exception": false,
+     "start_time": "2022-11-08T20:15:13.493207",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Removing all columns from which data has been extracted\n",
+    "data <- data %>% select(-c('customDimensions', 'device', 'geoNetwork', 'totals', 'trafficSource'))"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "c2706e7c",
+   "id": "895bfb4e",
    "metadata": {
     "papermill": {
-     "duration": 0.004378,
-     "end_time": "2022-11-07T03:32:55.490763",
+     "duration": 0.006642,
+     "end_time": "2022-11-08T20:15:13.587900",
      "exception": false,
-     "start_time": "2022-11-07T03:32:55.486385",
+     "start_time": "2022-11-08T20:15:13.581258",
      "status": "completed"
     },
     "tags": []
@@ -851,14 +1266,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 15.77555,
-   "end_time": "2022-11-07T03:32:55.624404",
+   "duration": 23.749499,
+   "end_time": "2022-11-08T20:15:13.715023",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2022-11-07T03:32:39.848854",
+   "start_time": "2022-11-08T20:14:49.965524",
    "version": "2.4.0"
   }
  },
