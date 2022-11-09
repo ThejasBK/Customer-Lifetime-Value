@@ -2,13 +2,13 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "65f47675",
+   "id": "808c5194",
    "metadata": {
     "papermill": {
-     "duration": 0.005929,
-     "end_time": "2022-11-08T20:14:53.555976",
+     "duration": 0.009237,
+     "end_time": "2022-11-09T17:14:55.045579",
      "exception": false,
-     "start_time": "2022-11-08T20:14:53.550047",
+     "start_time": "2022-11-09T17:14:55.036342",
      "status": "completed"
     },
     "tags": []
@@ -23,19 +23,19 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "de71a9b5",
+   "id": "9945da72",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:14:53.570482Z",
-     "iopub.status.busy": "2022-11-08T20:14:53.567842Z",
-     "iopub.status.idle": "2022-11-08T20:14:53.767893Z",
-     "shell.execute_reply": "2022-11-08T20:14:53.766085Z"
+     "iopub.execute_input": "2022-11-09T17:14:55.063869Z",
+     "iopub.status.busy": "2022-11-09T17:14:55.061938Z",
+     "iopub.status.idle": "2022-11-09T17:14:55.273041Z",
+     "shell.execute_reply": "2022-11-09T17:14:55.271201Z"
     },
     "papermill": {
-     "duration": 0.210688,
-     "end_time": "2022-11-08T20:14:53.771216",
+     "duration": 0.222697,
+     "end_time": "2022-11-09T17:14:55.275457",
      "exception": false,
-     "start_time": "2022-11-08T20:14:53.560528",
+     "start_time": "2022-11-09T17:14:55.052760",
      "status": "completed"
     },
     "tags": []
@@ -71,46 +71,46 @@
   {
    "cell_type": "code",
    "execution_count": 2,
-   "id": "9ee44a66",
+   "id": "78506245",
    "metadata": {
     "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
     "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:14:53.813868Z",
-     "iopub.status.busy": "2022-11-08T20:14:53.782812Z",
-     "iopub.status.idle": "2022-11-08T20:14:59.056770Z",
-     "shell.execute_reply": "2022-11-08T20:14:59.054849Z"
+     "iopub.execute_input": "2022-11-09T17:14:55.322529Z",
+     "iopub.status.busy": "2022-11-09T17:14:55.292202Z",
+     "iopub.status.idle": "2022-11-09T17:15:15.544229Z",
+     "shell.execute_reply": "2022-11-09T17:15:15.542426Z"
     },
     "papermill": {
-     "duration": 5.283034,
-     "end_time": "2022-11-08T20:14:59.059315",
+     "duration": 20.264964,
+     "end_time": "2022-11-09T17:15:15.547917",
      "exception": false,
-     "start_time": "2022-11-08T20:14:53.776281",
+     "start_time": "2022-11-09T17:14:55.282953",
      "status": "completed"
     },
     "tags": []
    },
    "outputs": [],
    "source": [
-    "data <- read.csv('../input/ga-customer-revenue-prediction/train_v2.csv', nrows = 10000)"
+    "data <- read.csv('../input/ga-customer-revenue-prediction/train_v2.csv', nrows = 50000)"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": 3,
-   "id": "e47ad130",
+   "id": "3c82fd63",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:14:59.077355Z",
-     "iopub.status.busy": "2022-11-08T20:14:59.074712Z",
-     "iopub.status.idle": "2022-11-08T20:14:59.097157Z",
-     "shell.execute_reply": "2022-11-08T20:14:59.095075Z"
+     "iopub.execute_input": "2022-11-09T17:15:15.566510Z",
+     "iopub.status.busy": "2022-11-09T17:15:15.565029Z",
+     "iopub.status.idle": "2022-11-09T17:15:15.587230Z",
+     "shell.execute_reply": "2022-11-09T17:15:15.584956Z"
     },
     "papermill": {
-     "duration": 0.033858,
-     "end_time": "2022-11-08T20:14:59.099986",
+     "duration": 0.034543,
+     "end_time": "2022-11-09T17:15:15.590249",
      "exception": false,
-     "start_time": "2022-11-08T20:14:59.066128",
+     "start_time": "2022-11-09T17:15:15.555706",
      "status": "completed"
     },
     "tags": []
@@ -119,16 +119,16 @@
     {
      "data": {
       "text/html": [
-       "10000"
+       "50000"
       ],
       "text/latex": [
-       "10000"
+       "50000"
       ],
       "text/markdown": [
-       "10000"
+       "50000"
       ],
       "text/plain": [
-       "[1] 10000"
+       "[1] 50000"
       ]
      },
      "metadata": {},
@@ -142,19 +142,19 @@
   {
    "cell_type": "code",
    "execution_count": 4,
-   "id": "b520f443",
+   "id": "f428e41d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:14:59.112774Z",
-     "iopub.status.busy": "2022-11-08T20:14:59.111305Z",
-     "iopub.status.idle": "2022-11-08T20:14:59.149479Z",
-     "shell.execute_reply": "2022-11-08T20:14:59.146794Z"
+     "iopub.execute_input": "2022-11-09T17:15:15.609745Z",
+     "iopub.status.busy": "2022-11-09T17:15:15.608160Z",
+     "iopub.status.idle": "2022-11-09T17:15:15.647384Z",
+     "shell.execute_reply": "2022-11-09T17:15:15.644624Z"
     },
     "papermill": {
-     "duration": 0.047645,
-     "end_time": "2022-11-08T20:14:59.152346",
+     "duration": 0.052554,
+     "end_time": "2022-11-09T17:15:15.650424",
      "exception": false,
-     "start_time": "2022-11-08T20:14:59.104701",
+     "start_time": "2022-11-09T17:15:15.597870",
      "status": "completed"
     },
     "tags": []
@@ -224,19 +224,19 @@
   {
    "cell_type": "code",
    "execution_count": 5,
-   "id": "2a31df75",
+   "id": "fe5d57d3",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:14:59.166671Z",
-     "iopub.status.busy": "2022-11-08T20:14:59.165102Z",
-     "iopub.status.idle": "2022-11-08T20:15:00.667303Z",
-     "shell.execute_reply": "2022-11-08T20:15:00.664971Z"
+     "iopub.execute_input": "2022-11-09T17:15:15.671104Z",
+     "iopub.status.busy": "2022-11-09T17:15:15.669514Z",
+     "iopub.status.idle": "2022-11-09T17:15:23.315371Z",
+     "shell.execute_reply": "2022-11-09T17:15:23.313024Z"
     },
     "papermill": {
-     "duration": 1.512827,
-     "end_time": "2022-11-08T20:15:00.670815",
+     "duration": 7.659354,
+     "end_time": "2022-11-09T17:15:23.318766",
      "exception": false,
-     "start_time": "2022-11-08T20:14:59.157988",
+     "start_time": "2022-11-09T17:15:15.659412",
      "status": "completed"
     },
     "tags": []
@@ -409,19 +409,19 @@
   {
    "cell_type": "code",
    "execution_count": 6,
-   "id": "cfed126d",
+   "id": "a44944f6",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:00.689942Z",
-     "iopub.status.busy": "2022-11-08T20:15:00.688164Z",
-     "iopub.status.idle": "2022-11-08T20:15:02.089410Z",
-     "shell.execute_reply": "2022-11-08T20:15:02.087659Z"
+     "iopub.execute_input": "2022-11-09T17:15:23.338756Z",
+     "iopub.status.busy": "2022-11-09T17:15:23.337302Z",
+     "iopub.status.idle": "2022-11-09T17:15:49.204549Z",
+     "shell.execute_reply": "2022-11-09T17:15:49.202692Z"
     },
     "papermill": {
-     "duration": 1.412428,
-     "end_time": "2022-11-08T20:15:02.092023",
+     "duration": 25.880861,
+     "end_time": "2022-11-09T17:15:49.208014",
      "exception": false,
-     "start_time": "2022-11-08T20:15:00.679595",
+     "start_time": "2022-11-09T17:15:23.327153",
      "status": "completed"
     },
     "tags": []
@@ -446,19 +446,19 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "6268bf50",
+   "id": "4c3698db",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:02.106584Z",
-     "iopub.status.busy": "2022-11-08T20:15:02.105126Z",
-     "iopub.status.idle": "2022-11-08T20:15:03.206480Z",
-     "shell.execute_reply": "2022-11-08T20:15:03.204798Z"
+     "iopub.execute_input": "2022-11-09T17:15:49.236156Z",
+     "iopub.status.busy": "2022-11-09T17:15:49.233485Z",
+     "iopub.status.idle": "2022-11-09T17:15:55.292601Z",
+     "shell.execute_reply": "2022-11-09T17:15:55.290833Z"
     },
     "papermill": {
-     "duration": 1.111121,
-     "end_time": "2022-11-08T20:15:03.208779",
+     "duration": 6.075624,
+     "end_time": "2022-11-09T17:15:55.295061",
      "exception": false,
-     "start_time": "2022-11-08T20:15:02.097658",
+     "start_time": "2022-11-09T17:15:49.219437",
      "status": "completed"
     },
     "tags": []
@@ -591,19 +591,19 @@
   {
    "cell_type": "code",
    "execution_count": 8,
-   "id": "9f01e028",
+   "id": "79b1a55c",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:03.224651Z",
-     "iopub.status.busy": "2022-11-08T20:15:03.223196Z",
-     "iopub.status.idle": "2022-11-08T20:15:05.031510Z",
-     "shell.execute_reply": "2022-11-08T20:15:05.029745Z"
+     "iopub.execute_input": "2022-11-09T17:15:55.316018Z",
+     "iopub.status.busy": "2022-11-09T17:15:55.314484Z",
+     "iopub.status.idle": "2022-11-09T17:16:34.312619Z",
+     "shell.execute_reply": "2022-11-09T17:16:34.310867Z"
     },
     "papermill": {
-     "duration": 1.819082,
-     "end_time": "2022-11-08T20:15:05.034218",
+     "duration": 39.01135,
+     "end_time": "2022-11-09T17:16:34.315164",
      "exception": false,
-     "start_time": "2022-11-08T20:15:03.215136",
+     "start_time": "2022-11-09T17:15:55.303814",
      "status": "completed"
     },
     "tags": []
@@ -631,19 +631,19 @@
   {
    "cell_type": "code",
    "execution_count": 9,
-   "id": "b562eca9",
+   "id": "6343e413",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:05.049805Z",
-     "iopub.status.busy": "2022-11-08T20:15:05.048264Z",
-     "iopub.status.idle": "2022-11-08T20:15:05.809096Z",
-     "shell.execute_reply": "2022-11-08T20:15:05.807471Z"
+     "iopub.execute_input": "2022-11-09T17:16:34.341562Z",
+     "iopub.status.busy": "2022-11-09T17:16:34.340083Z",
+     "iopub.status.idle": "2022-11-09T17:16:37.957188Z",
+     "shell.execute_reply": "2022-11-09T17:16:37.955456Z"
     },
     "papermill": {
-     "duration": 0.771209,
-     "end_time": "2022-11-08T20:15:05.811419",
+     "duration": 3.635668,
+     "end_time": "2022-11-09T17:16:37.959667",
      "exception": false,
-     "start_time": "2022-11-08T20:15:05.040210",
+     "start_time": "2022-11-09T17:16:34.323999",
      "status": "completed"
     },
     "tags": []
@@ -736,19 +736,19 @@
   {
    "cell_type": "code",
    "execution_count": 10,
-   "id": "3a38c521",
+   "id": "2a0218fd",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:05.826882Z",
-     "iopub.status.busy": "2022-11-08T20:15:05.825432Z",
-     "iopub.status.idle": "2022-11-08T20:15:08.731081Z",
-     "shell.execute_reply": "2022-11-08T20:15:08.729401Z"
+     "iopub.execute_input": "2022-11-09T17:16:37.982805Z",
+     "iopub.status.busy": "2022-11-09T17:16:37.981270Z",
+     "iopub.status.idle": "2022-11-09T17:17:44.021259Z",
+     "shell.execute_reply": "2022-11-09T17:17:44.019492Z"
     },
     "papermill": {
-     "duration": 2.916098,
-     "end_time": "2022-11-08T20:15:08.733568",
+     "duration": 66.054394,
+     "end_time": "2022-11-09T17:17:44.023596",
      "exception": false,
-     "start_time": "2022-11-08T20:15:05.817470",
+     "start_time": "2022-11-09T17:16:37.969202",
      "status": "completed"
     },
     "tags": []
@@ -813,19 +813,19 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "b348d8bd",
+   "id": "54eec404",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:08.749492Z",
-     "iopub.status.busy": "2022-11-08T20:15:08.748040Z",
-     "iopub.status.idle": "2022-11-08T20:15:09.734643Z",
-     "shell.execute_reply": "2022-11-08T20:15:09.733029Z"
+     "iopub.execute_input": "2022-11-09T17:17:44.044780Z",
+     "iopub.status.busy": "2022-11-09T17:17:44.043306Z",
+     "iopub.status.idle": "2022-11-09T17:17:49.129154Z",
+     "shell.execute_reply": "2022-11-09T17:17:49.127468Z"
     },
     "papermill": {
-     "duration": 0.997044,
-     "end_time": "2022-11-08T20:15:09.736953",
+     "duration": 5.099284,
+     "end_time": "2022-11-09T17:17:49.131770",
      "exception": false,
-     "start_time": "2022-11-08T20:15:08.739909",
+     "start_time": "2022-11-09T17:17:44.032486",
      "status": "completed"
     },
     "tags": []
@@ -912,19 +912,19 @@
   {
    "cell_type": "code",
    "execution_count": 12,
-   "id": "921e2090",
+   "id": "d739b086",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:09.753328Z",
-     "iopub.status.busy": "2022-11-08T20:15:09.751870Z",
-     "iopub.status.idle": "2022-11-08T20:15:11.304205Z",
-     "shell.execute_reply": "2022-11-08T20:15:11.302370Z"
+     "iopub.execute_input": "2022-11-09T17:17:49.154736Z",
+     "iopub.status.busy": "2022-11-09T17:17:49.153246Z",
+     "iopub.status.idle": "2022-11-09T17:18:22.895432Z",
+     "shell.execute_reply": "2022-11-09T17:18:22.893704Z"
     },
     "papermill": {
-     "duration": 1.563068,
-     "end_time": "2022-11-08T20:15:11.306729",
+     "duration": 33.755802,
+     "end_time": "2022-11-09T17:18:22.897879",
      "exception": false,
-     "start_time": "2022-11-08T20:15:09.743661",
+     "start_time": "2022-11-09T17:17:49.142077",
      "status": "completed"
     },
     "tags": []
@@ -955,19 +955,19 @@
   {
    "cell_type": "code",
    "execution_count": 13,
-   "id": "4b62ec73",
+   "id": "e2b7ac76",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:11.323090Z",
-     "iopub.status.busy": "2022-11-08T20:15:11.321516Z",
-     "iopub.status.idle": "2022-11-08T20:15:11.333422Z",
-     "shell.execute_reply": "2022-11-08T20:15:11.331776Z"
+     "iopub.execute_input": "2022-11-09T17:18:22.919711Z",
+     "iopub.status.busy": "2022-11-09T17:18:22.918275Z",
+     "iopub.status.idle": "2022-11-09T17:18:22.929964Z",
+     "shell.execute_reply": "2022-11-09T17:18:22.928348Z"
     },
     "papermill": {
-     "duration": 0.022244,
-     "end_time": "2022-11-08T20:15:11.335747",
+     "duration": 0.025351,
+     "end_time": "2022-11-09T17:18:22.932362",
      "exception": false,
-     "start_time": "2022-11-08T20:15:11.313503",
+     "start_time": "2022-11-09T17:18:22.907011",
      "status": "completed"
     },
     "tags": []
@@ -982,19 +982,19 @@
   {
    "cell_type": "code",
    "execution_count": 14,
-   "id": "a0f09807",
+   "id": "21c7047b",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:11.362234Z",
-     "iopub.status.busy": "2022-11-08T20:15:11.360627Z",
-     "iopub.status.idle": "2022-11-08T20:15:11.375754Z",
-     "shell.execute_reply": "2022-11-08T20:15:11.373879Z"
+     "iopub.execute_input": "2022-11-09T17:18:22.954199Z",
+     "iopub.status.busy": "2022-11-09T17:18:22.952713Z",
+     "iopub.status.idle": "2022-11-09T17:18:22.966825Z",
+     "shell.execute_reply": "2022-11-09T17:18:22.965144Z"
     },
     "papermill": {
-     "duration": 0.036291,
-     "end_time": "2022-11-08T20:15:11.378331",
+     "duration": 0.027817,
+     "end_time": "2022-11-09T17:18:22.969216",
      "exception": false,
-     "start_time": "2022-11-08T20:15:11.342040",
+     "start_time": "2022-11-09T17:18:22.941399",
      "status": "completed"
     },
     "tags": []
@@ -1091,19 +1091,19 @@
   {
    "cell_type": "code",
    "execution_count": 15,
-   "id": "c811b10e",
+   "id": "f480c67d",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:11.395178Z",
-     "iopub.status.busy": "2022-11-08T20:15:11.393491Z",
-     "iopub.status.idle": "2022-11-08T20:15:12.619612Z",
-     "shell.execute_reply": "2022-11-08T20:15:12.617826Z"
+     "iopub.execute_input": "2022-11-09T17:18:22.990535Z",
+     "iopub.status.busy": "2022-11-09T17:18:22.989135Z",
+     "iopub.status.idle": "2022-11-09T17:18:28.197980Z",
+     "shell.execute_reply": "2022-11-09T17:18:28.195717Z"
     },
     "papermill": {
-     "duration": 1.237291,
-     "end_time": "2022-11-08T20:15:12.622076",
+     "duration": 5.223039,
+     "end_time": "2022-11-09T17:18:28.201290",
      "exception": false,
-     "start_time": "2022-11-08T20:15:11.384785",
+     "start_time": "2022-11-09T17:18:22.978251",
      "status": "completed"
     },
     "tags": []
@@ -1169,19 +1169,19 @@
   {
    "cell_type": "code",
    "execution_count": 16,
-   "id": "4016fc45",
+   "id": "61fd6ff5",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:12.645676Z",
-     "iopub.status.busy": "2022-11-08T20:15:12.637103Z",
-     "iopub.status.idle": "2022-11-08T20:15:13.484059Z",
-     "shell.execute_reply": "2022-11-08T20:15:13.482169Z"
+     "iopub.execute_input": "2022-11-09T17:18:28.222888Z",
+     "iopub.status.busy": "2022-11-09T17:18:28.221438Z",
+     "iopub.status.idle": "2022-11-09T17:18:45.940466Z",
+     "shell.execute_reply": "2022-11-09T17:18:45.938653Z"
     },
     "papermill": {
-     "duration": 0.857972,
-     "end_time": "2022-11-08T20:15:13.486494",
+     "duration": 17.732388,
+     "end_time": "2022-11-09T17:18:45.942886",
      "exception": false,
-     "start_time": "2022-11-08T20:15:12.628522",
+     "start_time": "2022-11-09T17:18:28.210498",
      "status": "completed"
     },
     "tags": []
@@ -1209,19 +1209,19 @@
   {
    "cell_type": "code",
    "execution_count": 17,
-   "id": "83d0be43",
+   "id": "101c4820",
    "metadata": {
     "execution": {
-     "iopub.execute_input": "2022-11-08T20:15:13.503445Z",
-     "iopub.status.busy": "2022-11-08T20:15:13.501886Z",
-     "iopub.status.idle": "2022-11-08T20:15:13.572234Z",
-     "shell.execute_reply": "2022-11-08T20:15:13.570489Z"
+     "iopub.execute_input": "2022-11-09T17:18:45.965572Z",
+     "iopub.status.busy": "2022-11-09T17:18:45.963882Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.034509Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.032727Z"
     },
     "papermill": {
-     "duration": 0.081343,
-     "end_time": "2022-11-08T20:15:13.574550",
+     "duration": 0.085901,
+     "end_time": "2022-11-09T17:18:46.038137",
      "exception": false,
-     "start_time": "2022-11-08T20:15:13.493207",
+     "start_time": "2022-11-09T17:18:45.952236",
      "status": "completed"
     },
     "tags": []
@@ -1234,14 +1234,1121 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 18,
+   "id": "d89dd6f4",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.060218Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.058770Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.092548Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.090936Z"
+    },
+    "papermill": {
+     "duration": 0.047433,
+     "end_time": "2022-11-09T17:18:46.094819",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.047386",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<table class=\"dataframe\">\n",
+       "<caption>A data.frame: 1 × 29</caption>\n",
+       "<thead>\n",
+       "\t<tr><th></th><th scope=col>channelGrouping</th><th scope=col>date</th><th scope=col>fullVisitorId</th><th scope=col>hits</th><th scope=col>socialEngagementType</th><th scope=col>visitId</th><th scope=col>visitNumber</th><th scope=col>visitStartTime</th><th scope=col>device_browser</th><th scope=col>device_os</th><th scope=col>⋯</th><th scope=col>total_bounces</th><th scope=col>total_new_visits</th><th scope=col>total_session_quality_dim</th><th scope=col>total_transaction_revenue</th><th scope=col>traffic_campaign</th><th scope=col>traffic_source</th><th scope=col>traffic_medium</th><th scope=col>traffic_keyword</th><th scope=col>custom_index</th><th scope=col>custom_value</th></tr>\n",
+       "\t<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>⋯</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>\n",
+       "</thead>\n",
+       "<tbody>\n",
+       "\t<tr><th scope=row>1</th><td>Organic Search</td><td>20171016</td><td>3.162356e+18</td><td>[{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '0', 'isInteraction': True, 'isEntrance': True, 'isExit': True, 'referer': 'https://www.google.co.uk/search?q=water+bottle&amp;ie=utf-8&amp;num=100&amp;oe=utf-8&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCamRx0IRO1oCEXoliDJDoPjE&amp;glp=1&amp;gws_rd=cr&amp;fg=1', 'page': {'pagePath': '/google+redesign/bags/water+bottles+and+tumblers', 'hostname': 'shop.googlemerchandisestore.com', 'pageTitle': 'Water Bottles &amp; Tumblers | Drinkware | Google Merchandise Store', 'pagePathLevel1': '/google+redesign/', 'pagePathLevel2': '/bags/', 'pagePathLevel3': '/water+bottles+and+tumblers', 'pagePathLevel4': ''}, 'transaction': {'currencyCode': 'USD'}, 'item': {'currencyCode': 'USD'}, 'appInfo': {'screenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'landingScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'exitScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'screenDepth': '0'}, 'exceptionInfo': {'isFatal': True}, 'product': [{'productSKU': 'GGOEGDHC074099', 'v2ProductName': 'Google 17oz Stainless Steel Sport Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '23990000', 'localProductPrice': '23990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '1'}, {'productSKU': 'GGOEGDHQ015399', 'v2ProductName': '26 oz Double Wall Insulated Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '24990000', 'localProductPrice': '24990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '2'}, {'productSKU': 'GGOEYDHJ056099', 'v2ProductName': '22 oz YouTube Bottle Infuser', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '4990000', 'localProductPrice': '4990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '3'}, {'productSKU': 'GGOEGAAX0074', 'v2ProductName': 'Google 22 oz Water Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '2990000', 'localProductPrice': '2990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '4'}], 'promotion': [], 'eCommerceAction': {'action_type': '0', 'step': '1'}, 'experiment': [], 'customVariables': [], 'customDimensions': [], 'customMetrics': [], 'type': 'PAGE', 'social': {'socialNetwork': '(not set)', 'hasSocialSourceReferral': 'No', 'socialInteractionNetworkAction': ' : '}, 'contentGroup': {'contentGroup1': '(not set)', 'contentGroup2': 'Bags', 'contentGroup3': '(not set)', 'contentGroup4': '(not set)', 'contentGroup5': '(not set)', 'previousContentGroup1': '(entrance)', 'previousContentGroup2': '(entrance)', 'previousContentGroup3': '(entrance)', 'previousContentGroup4': '(entrance)', 'previousContentGroup5': '(entrance)', 'contentGroupUniqueViews2': '1'}, 'dataSource': 'web', 'publisher_infos': []}]</td><td>Not Socially Engaged</td><td>1508198450</td><td>1</td><td>1508198450</td><td>Firefox</td><td>Windows</td><td>⋯</td><td>1</td><td>1</td><td>1</td><td>0</td><td>(not set)</td><td>google</td><td>organic</td><td>water bottle</td><td>4</td><td>EMEA</td></tr>\n",
+       "</tbody>\n",
+       "</table>\n"
+      ],
+      "text/latex": [
+       "A data.frame: 1 × 29\n",
+       "\\begin{tabular}{r|lllllllllllllllllllll}\n",
+       "  & channelGrouping & date & fullVisitorId & hits & socialEngagementType & visitId & visitNumber & visitStartTime & device\\_browser & device\\_os & ⋯ & total\\_bounces & total\\_new\\_visits & total\\_session\\_quality\\_dim & total\\_transaction\\_revenue & traffic\\_campaign & traffic\\_source & traffic\\_medium & traffic\\_keyword & custom\\_index & custom\\_value\\\\\n",
+       "  & <chr> & <int> & <dbl> & <chr> & <chr> & <int> & <int> & <int> & <chr> & <chr> & ⋯ & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr> & <chr>\\\\\n",
+       "\\hline\n",
+       "\t1 & Organic Search & 20171016 & 3.162356e+18 & {[}\\{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '0', 'isInteraction': True, 'isEntrance': True, 'isExit': True, 'referer': 'https://www.google.co.uk/search?q=water+bottle\\&ie=utf-8\\&num=100\\&oe=utf-8\\&hl=en\\&gl=GB\\&uule=w+CAIQIFISCamRx0IRO1oCEXoliDJDoPjE\\&glp=1\\&gws\\_rd=cr\\&fg=1', 'page': \\{'pagePath': '/google+redesign/bags/water+bottles+and+tumblers', 'hostname': 'shop.googlemerchandisestore.com', 'pageTitle': 'Water Bottles \\& Tumblers \\textbar{} Drinkware \\textbar{} Google Merchandise Store', 'pagePathLevel1': '/google+redesign/', 'pagePathLevel2': '/bags/', 'pagePathLevel3': '/water+bottles+and+tumblers', 'pagePathLevel4': ''\\}, 'transaction': \\{'currencyCode': 'USD'\\}, 'item': \\{'currencyCode': 'USD'\\}, 'appInfo': \\{'screenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'landingScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'exitScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'screenDepth': '0'\\}, 'exceptionInfo': \\{'isFatal': True\\}, 'product': {[}\\{'productSKU': 'GGOEGDHC074099', 'v2ProductName': 'Google 17oz Stainless Steel Sport Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '23990000', 'localProductPrice': '23990000', 'isImpression': True, 'customDimensions': {[}{]}, 'customMetrics': {[}{]}, 'productListName': 'Category', 'productListPosition': '1'\\}, \\{'productSKU': 'GGOEGDHQ015399', 'v2ProductName': '26 oz Double Wall Insulated Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '24990000', 'localProductPrice': '24990000', 'isImpression': True, 'customDimensions': {[}{]}, 'customMetrics': {[}{]}, 'productListName': 'Category', 'productListPosition': '2'\\}, \\{'productSKU': 'GGOEYDHJ056099', 'v2ProductName': '22 oz YouTube Bottle Infuser', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '4990000', 'localProductPrice': '4990000', 'isImpression': True, 'customDimensions': {[}{]}, 'customMetrics': {[}{]}, 'productListName': 'Category', 'productListPosition': '3'\\}, \\{'productSKU': 'GGOEGAAX0074', 'v2ProductName': 'Google 22 oz Water Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '2990000', 'localProductPrice': '2990000', 'isImpression': True, 'customDimensions': {[}{]}, 'customMetrics': {[}{]}, 'productListName': 'Category', 'productListPosition': '4'\\}{]}, 'promotion': {[}{]}, 'eCommerceAction': \\{'action\\_type': '0', 'step': '1'\\}, 'experiment': {[}{]}, 'customVariables': {[}{]}, 'customDimensions': {[}{]}, 'customMetrics': {[}{]}, 'type': 'PAGE', 'social': \\{'socialNetwork': '(not set)', 'hasSocialSourceReferral': 'No', 'socialInteractionNetworkAction': ' : '\\}, 'contentGroup': \\{'contentGroup1': '(not set)', 'contentGroup2': 'Bags', 'contentGroup3': '(not set)', 'contentGroup4': '(not set)', 'contentGroup5': '(not set)', 'previousContentGroup1': '(entrance)', 'previousContentGroup2': '(entrance)', 'previousContentGroup3': '(entrance)', 'previousContentGroup4': '(entrance)', 'previousContentGroup5': '(entrance)', 'contentGroupUniqueViews2': '1'\\}, 'dataSource': 'web', 'publisher\\_infos': {[}{]}\\}{]} & Not Socially Engaged & 1508198450 & 1 & 1508198450 & Firefox & Windows & ⋯ & 1 & 1 & 1 & 0 & (not set) & google & organic & water bottle & 4 & EMEA\\\\\n",
+       "\\end{tabular}\n"
+      ],
+      "text/markdown": [
+       "\n",
+       "A data.frame: 1 × 29\n",
+       "\n",
+       "| <!--/--> | channelGrouping &lt;chr&gt; | date &lt;int&gt; | fullVisitorId &lt;dbl&gt; | hits &lt;chr&gt; | socialEngagementType &lt;chr&gt; | visitId &lt;int&gt; | visitNumber &lt;int&gt; | visitStartTime &lt;int&gt; | device_browser &lt;chr&gt; | device_os &lt;chr&gt; | ⋯ ⋯ | total_bounces &lt;chr&gt; | total_new_visits &lt;chr&gt; | total_session_quality_dim &lt;chr&gt; | total_transaction_revenue &lt;chr&gt; | traffic_campaign &lt;chr&gt; | traffic_source &lt;chr&gt; | traffic_medium &lt;chr&gt; | traffic_keyword &lt;chr&gt; | custom_index &lt;chr&gt; | custom_value &lt;chr&gt; |\n",
+       "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n",
+       "| 1 | Organic Search | 20171016 | 3.162356e+18 | [{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '0', 'isInteraction': True, 'isEntrance': True, 'isExit': True, 'referer': 'https://www.google.co.uk/search?q=water+bottle&amp;ie=utf-8&amp;num=100&amp;oe=utf-8&amp;hl=en&amp;gl=GB&amp;uule=w+CAIQIFISCamRx0IRO1oCEXoliDJDoPjE&amp;glp=1&amp;gws_rd=cr&amp;fg=1', 'page': {'pagePath': '/google+redesign/bags/water+bottles+and+tumblers', 'hostname': 'shop.googlemerchandisestore.com', 'pageTitle': 'Water Bottles &amp; Tumblers | Drinkware | Google Merchandise Store', 'pagePathLevel1': '/google+redesign/', 'pagePathLevel2': '/bags/', 'pagePathLevel3': '/water+bottles+and+tumblers', 'pagePathLevel4': ''}, 'transaction': {'currencyCode': 'USD'}, 'item': {'currencyCode': 'USD'}, 'appInfo': {'screenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'landingScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'exitScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'screenDepth': '0'}, 'exceptionInfo': {'isFatal': True}, 'product': [{'productSKU': 'GGOEGDHC074099', 'v2ProductName': 'Google 17oz Stainless Steel Sport Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '23990000', 'localProductPrice': '23990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '1'}, {'productSKU': 'GGOEGDHQ015399', 'v2ProductName': '26 oz Double Wall Insulated Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '24990000', 'localProductPrice': '24990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '2'}, {'productSKU': 'GGOEYDHJ056099', 'v2ProductName': '22 oz YouTube Bottle Infuser', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '4990000', 'localProductPrice': '4990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '3'}, {'productSKU': 'GGOEGAAX0074', 'v2ProductName': 'Google 22 oz Water Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '2990000', 'localProductPrice': '2990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '4'}], 'promotion': [], 'eCommerceAction': {'action_type': '0', 'step': '1'}, 'experiment': [], 'customVariables': [], 'customDimensions': [], 'customMetrics': [], 'type': 'PAGE', 'social': {'socialNetwork': '(not set)', 'hasSocialSourceReferral': 'No', 'socialInteractionNetworkAction': ' : '}, 'contentGroup': {'contentGroup1': '(not set)', 'contentGroup2': 'Bags', 'contentGroup3': '(not set)', 'contentGroup4': '(not set)', 'contentGroup5': '(not set)', 'previousContentGroup1': '(entrance)', 'previousContentGroup2': '(entrance)', 'previousContentGroup3': '(entrance)', 'previousContentGroup4': '(entrance)', 'previousContentGroup5': '(entrance)', 'contentGroupUniqueViews2': '1'}, 'dataSource': 'web', 'publisher_infos': []}] | Not Socially Engaged | 1508198450 | 1 | 1508198450 | Firefox | Windows | ⋯ | 1 | 1 | 1 | 0 | (not set) | google | organic | water bottle | 4 | EMEA |\n",
+       "\n"
+      ],
+      "text/plain": [
+       "  channelGrouping date     fullVisitorId\n",
+       "1 Organic Search  20171016 3.162356e+18 \n",
+       "  hits                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  \n",
+       "1 [{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '0', 'isInteraction': True, 'isEntrance': True, 'isExit': True, 'referer': 'https://www.google.co.uk/search?q=water+bottle&ie=utf-8&num=100&oe=utf-8&hl=en&gl=GB&uule=w+CAIQIFISCamRx0IRO1oCEXoliDJDoPjE&glp=1&gws_rd=cr&fg=1', 'page': {'pagePath': '/google+redesign/bags/water+bottles+and+tumblers', 'hostname': 'shop.googlemerchandisestore.com', 'pageTitle': 'Water Bottles & Tumblers | Drinkware | Google Merchandise Store', 'pagePathLevel1': '/google+redesign/', 'pagePathLevel2': '/bags/', 'pagePathLevel3': '/water+bottles+and+tumblers', 'pagePathLevel4': ''}, 'transaction': {'currencyCode': 'USD'}, 'item': {'currencyCode': 'USD'}, 'appInfo': {'screenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'landingScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'exitScreenName': 'shop.googlemerchandisestore.com/google+redesign/bags/water+bottles+and+tumblers', 'screenDepth': '0'}, 'exceptionInfo': {'isFatal': True}, 'product': [{'productSKU': 'GGOEGDHC074099', 'v2ProductName': 'Google 17oz Stainless Steel Sport Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '23990000', 'localProductPrice': '23990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '1'}, {'productSKU': 'GGOEGDHQ015399', 'v2ProductName': '26 oz Double Wall Insulated Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '24990000', 'localProductPrice': '24990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '2'}, {'productSKU': 'GGOEYDHJ056099', 'v2ProductName': '22 oz YouTube Bottle Infuser', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '4990000', 'localProductPrice': '4990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '3'}, {'productSKU': 'GGOEGAAX0074', 'v2ProductName': 'Google 22 oz Water Bottle', 'v2ProductCategory': 'Home/Drinkware/Water Bottles and Tumblers/', 'productVariant': '(not set)', 'productBrand': '(not set)', 'productPrice': '2990000', 'localProductPrice': '2990000', 'isImpression': True, 'customDimensions': [], 'customMetrics': [], 'productListName': 'Category', 'productListPosition': '4'}], 'promotion': [], 'eCommerceAction': {'action_type': '0', 'step': '1'}, 'experiment': [], 'customVariables': [], 'customDimensions': [], 'customMetrics': [], 'type': 'PAGE', 'social': {'socialNetwork': '(not set)', 'hasSocialSourceReferral': 'No', 'socialInteractionNetworkAction': ' : '}, 'contentGroup': {'contentGroup1': '(not set)', 'contentGroup2': 'Bags', 'contentGroup3': '(not set)', 'contentGroup4': '(not set)', 'contentGroup5': '(not set)', 'previousContentGroup1': '(entrance)', 'previousContentGroup2': '(entrance)', 'previousContentGroup3': '(entrance)', 'previousContentGroup4': '(entrance)', 'previousContentGroup5': '(entrance)', 'contentGroupUniqueViews2': '1'}, 'dataSource': 'web', 'publisher_infos': []}]\n",
+       "  socialEngagementType visitId    visitNumber visitStartTime device_browser\n",
+       "1 Not Socially Engaged 1508198450 1           1508198450     Firefox       \n",
+       "  device_os ⋯ total_bounces total_new_visits total_session_quality_dim\n",
+       "1 Windows   ⋯ 1             1                1                        \n",
+       "  total_transaction_revenue traffic_campaign traffic_source traffic_medium\n",
+       "1 0                         (not set)        google         organic       \n",
+       "  traffic_keyword custom_index custom_value\n",
+       "1 water bottle    4            EMEA        "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "head(data, 1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "3b526e49",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.118192Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.116713Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.176070Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.173726Z"
+    },
+    "papermill": {
+     "duration": 0.073541,
+     "end_time": "2022-11-09T17:18:46.178641",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.105100",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "'data.frame':\t50000 obs. of  29 variables:\n",
+      " $ channelGrouping                : chr  \"Organic Search\" \"Referral\" \"Direct\" \"Organic Search\" ...\n",
+      " $ date                           : int  20171016 20171016 20171016 20171016 20171016 20171016 20171016 20171016 20171016 20171016 ...\n",
+      " $ fullVisitorId                  : num  3.16e+18 8.93e+18 7.99e+18 9.08e+18 6.96e+18 ...\n",
+      " $ hits                           : chr  \"[{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '0', 'isInteraction': True, 'isEntrance': True, 'isExi\"| __truncated__ \"[{'hitNumber': '1', 'time': '0', 'hour': '10', 'minute': '51', 'isInteraction': True, 'isEntrance': True, 'refe\"| __truncated__ \"[{'hitNumber': '1', 'time': '0', 'hour': '17', 'minute': '53', 'isInteraction': True, 'isEntrance': True, 'refe\"| __truncated__ \"[{'hitNumber': '1', 'time': '0', 'hour': '9', 'minute': '4', 'isInteraction': True, 'isEntrance': True, 'refere\"| __truncated__ ...\n",
+      " $ socialEngagementType           : chr  \"Not Socially Engaged\" \"Not Socially Engaged\" \"Not Socially Engaged\" \"Not Socially Engaged\" ...\n",
+      " $ visitId                        : int  1508198450 1508176307 1508201613 1508169851 1508190552 1508196701 1508152478 1508206208 1508207516 1508165159 ...\n",
+      " $ visitNumber                    : int  1 6 1 1 1 1 1 1 1 2 ...\n",
+      " $ visitStartTime                 : int  1508198450 1508176307 1508201613 1508169851 1508190552 1508196701 1508152478 1508206208 1508207516 1508165159 ...\n",
+      " $ device_browser                 : chr  \"Firefox\" \"Chrome\" \"Chrome\" \"Chrome\" ...\n",
+      " $ device_os                      : chr  \"Windows\" \"Chrome OS\" \"Android\" \"Windows\" ...\n",
+      " $ device_category                : chr  \"desktop\" \"desktop\" \"mobile\" \"desktop\" ...\n",
+      " $ geo_info_continent             : chr  \"Europe\" \"Americas\" \"Americas\" \"Asia\" ...\n",
+      " $ geo_info_sub_continent         : chr  \"Western Europe\" \"Northern America\" \"Northern America\" \"Western Asia\" ...\n",
+      " $ geo_info_network_domain        : chr  \"(not set)\" \"(not set)\" \"windjammercable.net\" \"unknown.unknown\" ...\n",
+      " $ geo_info_country               : chr  \"Germany\" \"United States\" \"United States\" \"Turkey\" ...\n",
+      " $ total_visits                   : chr  \"1\" \"1\" \"1\" \"1\" ...\n",
+      " $ total_hits                     : chr  \"1\" \"2\" \"2\" \"2\" ...\n",
+      " $ total_page_views               : num  0 0 0 0 0 0 0 0 0 0 ...\n",
+      " $ total_total_transaction_revenue: chr  \"0\" \"0\" \"0\" \"0\" ...\n",
+      " $ total_bounces                  : chr  \"1\" \"0\" \"0\" \"0\" ...\n",
+      " $ total_new_visits               : chr  \"1\" \"0\" \"1\" \"1\" ...\n",
+      " $ total_session_quality_dim      : chr  \"1\" \"2\" \"1\" \"1\" ...\n",
+      " $ total_transaction_revenue      : chr  \"0\" \"0\" \"0\" \"0\" ...\n",
+      " $ traffic_campaign               : chr  \"(not set)\" \"(not set)\" \"(not set)\" \"(not set)\" ...\n",
+      " $ traffic_source                 : chr  \"google\" \"sites.google.com\" \"(direct)\" \"google\" ...\n",
+      " $ traffic_medium                 : chr  \"organic\" \"referral\" \"(none)\" \"organic\" ...\n",
+      " $ traffic_keyword                : chr  \"water bottle\" \"(not provided)\" \"(not provided)\" \"(not provided)\" ...\n",
+      " $ custom_index                   : chr  \"4\" \"4\" \"4\" \"4\" ...\n",
+      " $ custom_value                   : chr  \"EMEA\" \"North America\" \"North America\" \"EMEA\" ...\n"
+     ]
+    }
+   ],
+   "source": [
+    "str(data)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "7e8967dd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.203408Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.201943Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.279460Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.277671Z"
+    },
+    "papermill": {
+     "duration": 0.092078,
+     "end_time": "2022-11-09T17:18:46.281797",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.189719",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Converting the data types of some columns in the dataframe\n",
+    "data$total_visits <- as.numeric(data$total_visits)\n",
+    "data$total_hits <- as.numeric(data$total_hits)\n",
+    "data$total_total_transaction_revenue <- as.numeric(data$total_total_transaction_revenue)\n",
+    "data$total_bounces <- as.numeric(data$total_bounces)\n",
+    "data$total_new_visits <- as.numeric(data$total_new_visits)\n",
+    "data$total_session_quality_dim <- as.numeric(data$total_session_quality_dim)\n",
+    "data$total_transaction_revenue <- as.numeric(data$total_transaction_revenue)\n",
+    "data$custom_index <- as.numeric(data$custom_index)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "5755001b",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.305822Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.304406Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.327719Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.325914Z"
+    },
+    "papermill": {
+     "duration": 0.037638,
+     "end_time": "2022-11-09T17:18:46.330129",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.292491",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Organic Search 21270\"\n",
+      "[1] \"Referral 6179\"\n",
+      "[1] \"Direct 7305\"\n",
+      "[1] \"Paid Search 1279\"\n",
+      "[1] \"Display 940\"\n",
+      "[1] \"Affiliates 943\"\n",
+      "[1] \"Social 12083\"\n",
+      "[1] \"(Other) 1\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "for(i in unique(data$channelGrouping)){\n",
+    "    print(paste(i, sum(data$channelGrouping == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "6f22e01c",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.354127Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.352682Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.366250Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.364363Z"
+    },
+    "papermill": {
+     "duration": 0.028884,
+     "end_time": "2022-11-09T17:18:46.369643",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.340759",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Transactional amount on each day\n",
+    "# Transactional amount for each channel grouping\n",
+    "# Check for these others in channelGrouping and if its unimportant, remove it\n",
+    "# Pie graph of percentage of device browsers\n",
+    "# Transactions from each browser\n",
+    "\n",
+    "# Check relation between fullVIsitorID and visitID\n",
+    "\n",
+    "# Remove the whole column of SocvialEngagementType as it is useless\n",
+    "# unique(data$socialEngagementType)\n",
+    "\n",
+    "# Remove the unwanted device_browser, device_os, device_category\n",
+    "#rows after checking for its relation with the transaction amount\n",
+    "\n",
+    "# Map explaining the total transaction amount for each continent, sub_continent, country,\n",
+    "# geo_info_network_domain\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "21cea66d",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.393824Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.392335Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.411928Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.409715Z"
+    },
+    "papermill": {
+     "duration": 0.035036,
+     "end_time": "2022-11-09T17:18:46.414778",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.379742",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>20171016</li><li>20160902</li><li>20171130</li><li>20170126</li><li>20170623</li><li>20170312</li><li>20170203</li><li>20180415</li><li>20171110</li><li>20160811</li><li>20170613</li><li>20170113</li><li>20171111</li><li>20161118</li><li>20161110</li><li>20161112</li><li>20170621</li><li>20180117</li><li>20180103</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 20171016\n",
+       "\\item 20160902\n",
+       "\\item 20171130\n",
+       "\\item 20170126\n",
+       "\\item 20170623\n",
+       "\\item 20170312\n",
+       "\\item 20170203\n",
+       "\\item 20180415\n",
+       "\\item 20171110\n",
+       "\\item 20160811\n",
+       "\\item 20170613\n",
+       "\\item 20170113\n",
+       "\\item 20171111\n",
+       "\\item 20161118\n",
+       "\\item 20161110\n",
+       "\\item 20161112\n",
+       "\\item 20170621\n",
+       "\\item 20180117\n",
+       "\\item 20180103\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 20171016\n",
+       "2. 20160902\n",
+       "3. 20171130\n",
+       "4. 20170126\n",
+       "5. 20170623\n",
+       "6. 20170312\n",
+       "7. 20170203\n",
+       "8. 20180415\n",
+       "9. 20171110\n",
+       "10. 20160811\n",
+       "11. 20170613\n",
+       "12. 20170113\n",
+       "13. 20171111\n",
+       "14. 20161118\n",
+       "15. 20161110\n",
+       "16. 20161112\n",
+       "17. 20170621\n",
+       "18. 20180117\n",
+       "19. 20180103\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] 20171016 20160902 20171130 20170126 20170623 20170312 20170203 20180415\n",
+       " [9] 20171110 20160811 20170613 20170113 20171111 20161118 20161110 20161112\n",
+       "[17] 20170621 20180117 20180103"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "unique(data$date)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "56f5b5d3",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.438677Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.437123Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.454652Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.452913Z"
+    },
+    "papermill": {
+     "duration": 0.032434,
+     "end_time": "2022-11-09T17:18:46.457323",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.424889",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "150"
+      ],
+      "text/latex": [
+       "150"
+      ],
+      "text/markdown": [
+       "150"
+      ],
+      "text/plain": [
+       "[1] 150"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "length(unique(data$visitNumber))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "87e1b761",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.484268Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.481842Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.502398Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.500591Z"
+    },
+    "papermill": {
+     "duration": 0.036719,
+     "end_time": "2022-11-09T17:18:46.504795",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.468076",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "49042"
+      ],
+      "text/latex": [
+       "49042"
+      ],
+      "text/markdown": [
+       "49042"
+      ],
+      "text/plain": [
+       "[1] 49042"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "length(unique(data$visitStartTime))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "1f8f1f68",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.529364Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.527818Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.558974Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.556616Z"
+    },
+    "papermill": {
+     "duration": 0.047583,
+     "end_time": "2022-11-09T17:18:46.563104",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.515521",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Firefox 1911\"\n",
+      "[1] \"Chrome 33986\"\n",
+      "[1] \"Safari 10052\"\n",
+      "[1] \"UC Browser 138\"\n",
+      "[1] \"Internet Explorer 1138\"\n",
+      "[1] \"Edge 583\"\n",
+      "[1] \"Samsung Internet 295\"\n",
+      "[1] \"Android Webview 583\"\n",
+      "[1] \"Safari (in-app) 371\"\n",
+      "[1] \"Opera Mini 428\"\n",
+      "[1] \"Opera 281\"\n",
+      "[1] \"YaBrowser 73\"\n",
+      "[1] \"Amazon Silk 38\"\n",
+      "[1] \"Mozilla Compatible Agent 17\"\n",
+      "[1] \"Puffin 6\"\n",
+      "[1] \"Maxthon 4\"\n",
+      "[1] \"BlackBerry 8\"\n",
+      "[1] \"ADM 1\"\n",
+      "[1] \"Coc Coc 37\"\n",
+      "[1] \"MRCHROME 8\"\n",
+      "[1] \"Android Browser 22\"\n",
+      "[1] \"Playstation Vita Browser 1\"\n",
+      "[1] \"Nintendo Browser 7\"\n",
+      "[1] \"Nokia Browser 5\"\n",
+      "[1] \"SeaMonkey 1\"\n",
+      "[1] \"Lunascape 1\"\n",
+      "[1] \"IE with Chrome Frame 1\"\n",
+      "[1] \"ThumbSniper 1\"\n",
+      "[1] \"LYF_LS_4002_12 1\"\n",
+      "[1] \"DESKTOP 2\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "for(i in unique(data$device_browser)){\n",
+    "    print(paste(i, sum(data$device_browser == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "965162ce",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.588598Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.587050Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.615930Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.613172Z"
+    },
+    "papermill": {
+     "duration": 0.044684,
+     "end_time": "2022-11-09T17:18:46.619552",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.574868",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Windows 19247\"\n",
+      "[1] \"Chrome OS 1507\"\n",
+      "[1] \"Android 7324\"\n",
+      "[1] \"Macintosh 13596\"\n",
+      "[1] \"iOS 5997\"\n",
+      "[1] \"Linux 1830\"\n",
+      "[1] \"(not set) 337\"\n",
+      "[1] \"Windows Phone 74\"\n",
+      "[1] \"Samsung 27\"\n",
+      "[1] \"Tizen 24\"\n",
+      "[1] \"BlackBerry 8\"\n",
+      "[1] \"OS/2 9\"\n",
+      "[1] \"Playstation Vita 1\"\n",
+      "[1] \"Xbox 9\"\n",
+      "[1] \"Nintendo Wii 6\"\n",
+      "[1] \"Firefox OS 3\"\n",
+      "[1] \"Nintendo 3DS 1\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "for(i in unique(data$device_os)){\n",
+    "    print(paste(i, sum(data$device_os == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "543b7d56",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.644686Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.643171Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.667529Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.664666Z"
+    },
+    "papermill": {
+     "duration": 0.040749,
+     "end_time": "2022-11-09T17:18:46.671179",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.630430",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"desktop 36124\"\n",
+      "[1] \"mobile 12258\"\n",
+      "[1] \"tablet 1618\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "for(i in unique(data$device_category)){\n",
+    "    print(paste(i, sum(data$device_category == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "7b9ac776",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.697365Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.695685Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.733716Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.729621Z"
+    },
+    "papermill": {
+     "duration": 0.055027,
+     "end_time": "2022-11-09T17:18:46.737201",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.682174",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'Europe'</li><li>'Americas'</li><li>'Asia'</li><li>'Oceania'</li><li>'(not set)'</li><li>'Africa'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'Europe'\n",
+       "\\item 'Americas'\n",
+       "\\item 'Asia'\n",
+       "\\item 'Oceania'\n",
+       "\\item '(not set)'\n",
+       "\\item 'Africa'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'Europe'\n",
+       "2. 'Americas'\n",
+       "3. 'Asia'\n",
+       "4. 'Oceania'\n",
+       "5. '(not set)'\n",
+       "6. 'Africa'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       "[1] \"Europe\"    \"Americas\"  \"Asia\"      \"Oceania\"   \"(not set)\" \"Africa\"   "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Europe 11122\"\n",
+      "[1] \"Americas 24313\"\n",
+      "[1] \"Asia 12836\"\n",
+      "[1] \"Oceania 754\"\n",
+      "[1] \"(not set) 73\"\n",
+      "[1] \"Africa 902\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique(data$geo_info_continent)\n",
+    "for(i in unique(data$geo_info_continent)){\n",
+    "    print(paste(i, sum(data$geo_info_continent == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "aabf1409",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.764302Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.762479Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.799879Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.797684Z"
+    },
+    "papermill": {
+     "duration": 0.053449,
+     "end_time": "2022-11-09T17:18:46.802694",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.749245",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<style>\n",
+       ".list-inline {list-style: none; margin:0; padding: 0}\n",
+       ".list-inline>li {display: inline-block}\n",
+       ".list-inline>li:not(:last-child)::after {content: \"\\00b7\"; padding: 0 .5ex}\n",
+       "</style>\n",
+       "<ol class=list-inline><li>'Western Europe'</li><li>'Northern America'</li><li>'Western Asia'</li><li>'Central America'</li><li>'Northern Europe'</li><li>'Southern Asia'</li><li>'Southeast Asia'</li><li>'Eastern Europe'</li><li>'South America'</li><li>'Eastern Asia'</li><li>'Southern Europe'</li><li>'Australasia'</li><li>'Central Asia'</li><li>'(not set)'</li><li>'Northern Africa'</li><li>'Eastern Africa'</li><li>'Southern Africa'</li><li>'Western Africa'</li><li>'Caribbean'</li><li>'Middle Africa'</li><li>'Melanesia'</li><li>'Micronesian Region'</li><li>'Polynesia'</li></ol>\n"
+      ],
+      "text/latex": [
+       "\\begin{enumerate*}\n",
+       "\\item 'Western Europe'\n",
+       "\\item 'Northern America'\n",
+       "\\item 'Western Asia'\n",
+       "\\item 'Central America'\n",
+       "\\item 'Northern Europe'\n",
+       "\\item 'Southern Asia'\n",
+       "\\item 'Southeast Asia'\n",
+       "\\item 'Eastern Europe'\n",
+       "\\item 'South America'\n",
+       "\\item 'Eastern Asia'\n",
+       "\\item 'Southern Europe'\n",
+       "\\item 'Australasia'\n",
+       "\\item 'Central Asia'\n",
+       "\\item '(not set)'\n",
+       "\\item 'Northern Africa'\n",
+       "\\item 'Eastern Africa'\n",
+       "\\item 'Southern Africa'\n",
+       "\\item 'Western Africa'\n",
+       "\\item 'Caribbean'\n",
+       "\\item 'Middle Africa'\n",
+       "\\item 'Melanesia'\n",
+       "\\item 'Micronesian Region'\n",
+       "\\item 'Polynesia'\n",
+       "\\end{enumerate*}\n"
+      ],
+      "text/markdown": [
+       "1. 'Western Europe'\n",
+       "2. 'Northern America'\n",
+       "3. 'Western Asia'\n",
+       "4. 'Central America'\n",
+       "5. 'Northern Europe'\n",
+       "6. 'Southern Asia'\n",
+       "7. 'Southeast Asia'\n",
+       "8. 'Eastern Europe'\n",
+       "9. 'South America'\n",
+       "10. 'Eastern Asia'\n",
+       "11. 'Southern Europe'\n",
+       "12. 'Australasia'\n",
+       "13. 'Central Asia'\n",
+       "14. '(not set)'\n",
+       "15. 'Northern Africa'\n",
+       "16. 'Eastern Africa'\n",
+       "17. 'Southern Africa'\n",
+       "18. 'Western Africa'\n",
+       "19. 'Caribbean'\n",
+       "20. 'Middle Africa'\n",
+       "21. 'Melanesia'\n",
+       "22. 'Micronesian Region'\n",
+       "23. 'Polynesia'\n",
+       "\n",
+       "\n"
+      ],
+      "text/plain": [
+       " [1] \"Western Europe\"     \"Northern America\"   \"Western Asia\"      \n",
+       " [4] \"Central America\"    \"Northern Europe\"    \"Southern Asia\"     \n",
+       " [7] \"Southeast Asia\"     \"Eastern Europe\"     \"South America\"     \n",
+       "[10] \"Eastern Asia\"       \"Southern Europe\"    \"Australasia\"       \n",
+       "[13] \"Central Asia\"       \"(not set)\"          \"Northern Africa\"   \n",
+       "[16] \"Eastern Africa\"     \"Southern Africa\"    \"Western Africa\"    \n",
+       "[19] \"Caribbean\"          \"Middle Africa\"      \"Melanesia\"         \n",
+       "[22] \"Micronesian Region\" \"Polynesia\"         "
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Western Europe 3466\"\n",
+      "[1] \"Northern America 20954\"\n",
+      "[1] \"Western Asia 2014\"\n",
+      "[1] \"Central America 895\"\n",
+      "[1] \"Northern Europe 3109\"\n",
+      "[1] \"Southern Asia 3508\"\n",
+      "[1] \"Southeast Asia 4650\"\n",
+      "[1] \"Eastern Europe 2652\"\n",
+      "[1] \"South America 2344\"\n",
+      "[1] \"Eastern Asia 2595\"\n",
+      "[1] \"Southern Europe 1895\"\n",
+      "[1] \"Australasia 747\"\n",
+      "[1] \"Central Asia 69\"\n",
+      "[1] \"(not set) 73\"\n",
+      "[1] \"Northern Africa 413\"\n",
+      "[1] \"Eastern Africa 131\"\n",
+      "[1] \"Southern Africa 139\"\n",
+      "[1] \"Western Africa 185\"\n",
+      "[1] \"Caribbean 120\"\n",
+      "[1] \"Middle Africa 34\"\n",
+      "[1] \"Melanesia 3\"\n",
+      "[1] \"Micronesian Region 3\"\n",
+      "[1] \"Polynesia 1\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "unique(data$geo_info_sub_continent)\n",
+    "for(i in unique(data$geo_info_sub_continent)){\n",
+    "    print(paste(i, sum(data$geo_info_sub_continent == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "19917923",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.828523Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.827126Z",
+     "iopub.status.idle": "2022-11-09T17:18:46.909308Z",
+     "shell.execute_reply": "2022-11-09T17:18:46.906205Z"
+    },
+    "papermill": {
+     "duration": 0.098801,
+     "end_time": "2022-11-09T17:18:46.912867",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.814066",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"Germany 1111\"\n",
+      "[1] \"United States 19533\"\n",
+      "[1] \"Turkey 1049\"\n",
+      "[1] \"Mexico 792\"\n",
+      "[1] \"United Kingdom 2071\"\n",
+      "[1] \"Denmark 148\"\n",
+      "[1] \"Netherlands 768\"\n",
+      "[1] \"Sweden 262\"\n",
+      "[1] \"Canada 1419\"\n",
+      "[1] \"India 3058\"\n",
+      "[1] \"Belgium 301\"\n",
+      "[1] \"Philippines 470\"\n",
+      "[1] \"Slovakia 90\"\n",
+      "[1] \"Brazil 1187\"\n",
+      "[1] \"Japan 1044\"\n",
+      "[1] \"Taiwan 804\"\n",
+      "[1] \"Peru 332\"\n",
+      "[1] \"Ireland 363\"\n",
+      "[1] \"Norway 121\"\n",
+      "[1] \"Romania 577\"\n",
+      "[1] \"Russia 554\"\n",
+      "[1] \"Italy 599\"\n",
+      "[1] \"New Zealand 120\"\n",
+      "[1] \"Czechia 321\"\n",
+      "[1] \"Serbia 98\"\n",
+      "[1] \"Argentina 299\"\n",
+      "[1] \"Australia 627\"\n",
+      "[1] \"Hong Kong 218\"\n",
+      "[1] \"Indonesia 486\"\n",
+      "[1] \"Singapore 422\"\n",
+      "[1] \"Kazakhstan 57\"\n",
+      "[1] \"Thailand 1151\"\n",
+      "[1] \"Ecuador 50\"\n",
+      "[1] \"Switzerland 226\"\n",
+      "[1] \"Spain 680\"\n",
+      "[1] \"France 906\"\n",
+      "[1] \"Malaysia 365\"\n",
+      "[1] \"Poland 522\"\n",
+      "[1] \"Bulgaria 87\"\n",
+      "[1] \"Jordan 35\"\n",
+      "[1] \"China 209\"\n",
+      "[1] \"Pakistan 213\"\n",
+      "[1] \"(not set) 73\"\n",
+      "[1] \"Israel 287\"\n",
+      "[1] \"Vietnam 1695\"\n",
+      "[1] \"Bangladesh 146\"\n",
+      "[1] \"Greece 128\"\n",
+      "[1] \"Algeria 110\"\n",
+      "[1] \"Georgia 49\"\n",
+      "[1] \"Ukraine 306\"\n",
+      "[1] \"South Korea 303\"\n",
+      "[1] \"Austria 146\"\n",
+      "[1] \"Ethiopia 24\"\n",
+      "[1] \"Colombia 243\"\n",
+      "[1] \"Sudan 4\"\n",
+      "[1] \"Egypt 135\"\n",
+      "[1] \"United Arab Emirates 172\"\n",
+      "[1] \"Panama 21\"\n",
+      "[1] \"Portugal 147\"\n",
+      "[1] \"Latvia 22\"\n",
+      "[1] \"Chile 94\"\n",
+      "[1] \"Belarus 45\"\n",
+      "[1] \"South Africa 132\"\n",
+      "[1] \"El Salvador 12\"\n",
+      "[1] \"Nigeria 117\"\n",
+      "[1] \"Venezuela 88\"\n",
+      "[1] \"Sri Lanka 76\"\n",
+      "[1] \"Estonia 22\"\n",
+      "[1] \"Croatia 70\"\n",
+      "[1] \"Myanmar (Burma) 15\"\n",
+      "[1] \"Lithuania 52\"\n",
+      "[1] \"Armenia 15\"\n",
+      "[1] \"Puerto Rico 34\"\n",
+      "[1] \"Saudi Arabia 181\"\n",
+      "[1] \"Dominican Republic 44\"\n",
+      "[1] \"Finland 40\"\n",
+      "[1] \"Hungary 135\"\n",
+      "[1] \"Cambodia 35\"\n",
+      "[1] \"Qatar 28\"\n",
+      "[1] \"Tunisia 55\"\n",
+      "[1] \"Morocco 100\"\n",
+      "[1] \"Mongolia 11\"\n",
+      "[1] \"Rwanda 3\"\n",
+      "[1] \"Afghanistan 3\"\n",
+      "[1] \"Trinidad & Tobago 10\"\n",
+      "[1] \"Bolivia 17\"\n",
+      "[1] \"Zambia 3\"\n",
+      "[1] \"Iraq 38\"\n",
+      "[1] \"Guatemala 31\"\n",
+      "[1] \"Honduras 11\"\n",
+      "[1] \"Yemen 10\"\n",
+      "[1] \"Tanzania 22\"\n",
+      "[1] \"Oman 26\"\n",
+      "[1] \"Greenland 2\"\n",
+      "[1] \"Kuwait 28\"\n",
+      "[1] \"French Guiana 3\"\n",
+      "[1] \"Réunion 8\"\n",
+      "[1] \"Kosovo 21\"\n",
+      "[1] \"Curaçao 2\"\n",
+      "[1] \"Malta 13\"\n",
+      "[1] \"Montenegro 5\"\n",
+      "[1] \"Slovenia 33\"\n",
+      "[1] \"Kenya 40\"\n",
+      "[1] \"Moldova 15\"\n",
+      "[1] \"Costa Rica 23\"\n",
+      "[1] \"Bosnia & Herzegovina 37\"\n",
+      "[1] \"Paraguay 5\"\n",
+      "[1] \"Botswana 2\"\n",
+      "[1] \"Uruguay 23\"\n",
+      "[1] \"Jamaica 19\"\n",
+      "[1] \"Gambia 3\"\n",
+      "[1] \"Madagascar 5\"\n",
+      "[1] \"Togo 1\"\n",
+      "[1] \"Lebanon 14\"\n",
+      "[1] \"Libya 9\"\n",
+      "[1] \"Uzbekistan 5\"\n",
+      "[1] \"Mauritius 5\"\n",
+      "[1] \"Cyprus 15\"\n",
+      "[1] \"Macedonia (FYROM) 39\"\n",
+      "[1] \"Albania 24\"\n",
+      "[1] \"Bahrain 14\"\n",
+      "[1] \"Turks & Caicos Islands 1\"\n",
+      "[1] \"Zimbabwe 2\"\n",
+      "[1] \"Ghana 17\"\n",
+      "[1] \"Cape Verde 1\"\n",
+      "[1] \"Senegal 10\"\n",
+      "[1] \"Côte d’Ivoire 17\"\n",
+      "[1] \"Laos 9\"\n",
+      "[1] \"Azerbaijan 32\"\n",
+      "[1] \"Barbados 3\"\n",
+      "[1] \"Uganda 12\"\n",
+      "[1] \"Nepal 10\"\n",
+      "[1] \"Mali 5\"\n",
+      "[1] \"Mauritania 1\"\n",
+      "[1] \"Nicaragua 3\"\n",
+      "[1] \"Iceland 8\"\n",
+      "[1] \"Palestine 21\"\n",
+      "[1] \"Haiti 2\"\n",
+      "[1] \"St. Kitts & Nevis 1\"\n",
+      "[1] \"Somalia 3\"\n",
+      "[1] \"Cameroon 14\"\n",
+      "[1] \"Namibia 5\"\n",
+      "[1] \"Congo - Kinshasa 11\"\n",
+      "[1] \"New Caledonia 2\"\n",
+      "[1] \"Kyrgyzstan 6\"\n",
+      "[1] \"Luxembourg 8\"\n",
+      "[1] \"Benin 4\"\n",
+      "[1] \"Guinea 3\"\n",
+      "[1] \"Guam 3\"\n",
+      "[1] \"San Marino 1\"\n",
+      "[1] \"Liberia 1\"\n",
+      "[1] \"Malawi 1\"\n",
+      "[1] \"Angola 5\"\n",
+      "[1] \"Guyana 3\"\n",
+      "[1] \"Brunei 2\"\n",
+      "[1] \"Guadeloupe 2\"\n",
+      "[1] \"Belize 2\"\n",
+      "[1] \"Maldives 2\"\n",
+      "[1] \"Guinea-Bissau 1\"\n",
+      "[1] \"Mozambique 3\"\n",
+      "[1] \"Gabon 3\"\n",
+      "[1] \"Macau 6\"\n",
+      "[1] \"Burkina Faso 4\"\n",
+      "[1] \"Tajikistan 1\"\n",
+      "[1] \"Martinique 2\"\n",
+      "[1] \"Congo - Brazzaville 1\"\n",
+      "[1] \"French Polynesia 1\"\n",
+      "[1] \"Fiji 1\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "# unique(data$geo_info_country)\n",
+    "for(i in unique(data$geo_info_country)){\n",
+    "    print(paste(i, sum(data$geo_info_country == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "d33c3af3",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:46.941374Z",
+     "iopub.status.busy": "2022-11-09T17:18:46.939313Z",
+     "iopub.status.idle": "2022-11-09T17:18:48.479640Z",
+     "shell.execute_reply": "2022-11-09T17:18:48.476767Z"
+    },
+    "papermill": {
+     "duration": 1.558288,
+     "end_time": "2022-11-09T17:18:48.483603",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:46.925315",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] \"(not set) 13690\"\n",
+      "[1] \"unknown.unknown 8434\"\n",
+      "[1] \"prod-infinitum.com.mx 328\"\n",
+      "[1] \"bhn.net 154\"\n",
+      "[1] \"att.net 274\"\n",
+      "[1] \"virginm.net 363\"\n",
+      "[1] \"btcentralplus.com 265\"\n",
+      "[1] \"pldt.net 205\"\n",
+      "[1] \"comcast.net 1467\"\n",
+      "[1] \"comcastbusiness.net 476\"\n",
+      "[1] \"rdsnet.ro 211\"\n",
+      "[1] \"shawcable.net 145\"\n",
+      "[1] \"bell.ca 154\"\n",
+      "[1] \"qwest.net 229\"\n",
+      "[1] \"verizon.net 695\"\n",
+      "[1] \"videotron.ca 114\"\n",
+      "[1] \"virtua.com.br 176\"\n",
+      "[1] \"optonline.net 267\"\n",
+      "[1] \"3bb.co.th 322\"\n",
+      "[1] \"hinet.net 464\"\n",
+      "[1] \"telecomitalia.it 182\"\n",
+      "[1] \"actcorp.in 144\"\n",
+      "[1] \"rima-tde.net 230\"\n",
+      "[1] \"t-ipconnect.de 163\"\n",
+      "[1] \"com 110\"\n",
+      "[1] \"cox.net 312\"\n",
+      "[1] \"rr.com 767\"\n",
+      "[1] \"ttnet.com.tr 682\"\n",
+      "[1] \"airtelbroadband.in 189\"\n",
+      "[1] \"sfr.net 157\"\n",
+      "[1] \"amazonaws.com 180\"\n",
+      "[1] \"proxad.net 107\"\n",
+      "[1] \"sbcglobal.net 284\"\n",
+      "[1] \"vnpt.vn 345\"\n",
+      "[1] \"spcsdns.net 106\"\n",
+      "[1] \"totbb.net 292\"\n",
+      "[1] \"superonline.net 118\"\n",
+      "[1] \"gvt.net.br 116\"\n",
+      "[1] \"asianet.co.th 252\"\n",
+      "[1] \"bezeqint.net 109\"\n",
+      "[1] \"google.com 312\"\n",
+      "[1] \"ocn.ne.jp 101\"\n",
+      "[1] \"wanadoo.fr 144\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "# unique(data$geo_info_network_domain)\n",
+    "for(i in unique(data$geo_info_network_domain)){\n",
+    "    if(sum(data$geo_info_network_domain == i) > 100)\n",
+    "    print(paste(i, sum(data$geo_info_network_domain == i)))\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "49500287",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2022-11-09T17:18:48.511088Z",
+     "iopub.status.busy": "2022-11-09T17:18:48.509577Z",
+     "iopub.status.idle": "2022-11-09T17:18:48.522426Z",
+     "shell.execute_reply": "2022-11-09T17:18:48.520827Z"
+    },
+    "papermill": {
+     "duration": 0.029713,
+     "end_time": "2022-11-09T17:18:48.525410",
+     "exception": false,
+     "start_time": "2022-11-09T17:18:48.495697",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Completed till geo_info. Need to complete the rest"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "895bfb4e",
+   "id": "061f10aa",
    "metadata": {
     "papermill": {
-     "duration": 0.006642,
-     "end_time": "2022-11-08T20:15:13.587900",
+     "duration": 0.011524,
+     "end_time": "2022-11-09T17:18:48.548979",
      "exception": false,
-     "start_time": "2022-11-08T20:15:13.581258",
+     "start_time": "2022-11-09T17:18:48.537455",
      "status": "completed"
     },
     "tags": []
@@ -1266,14 +2373,14 @@
   },
   "papermill": {
    "default_parameters": {},
-   "duration": 23.749499,
-   "end_time": "2022-11-08T20:15:13.715023",
+   "duration": 237.838711,
+   "end_time": "2022-11-09T17:18:48.783629",
    "environment_variables": {},
    "exception": null,
    "input_path": "__notebook__.ipynb",
    "output_path": "__notebook__.ipynb",
    "parameters": {},
-   "start_time": "2022-11-08T20:14:49.965524",
+   "start_time": "2022-11-09T17:14:50.944918",
    "version": "2.4.0"
   }
  },
